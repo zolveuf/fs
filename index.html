@@ -35,7 +35,7 @@
 <body>
   <header role="banner">
     <nav class="navbar" aria-label="Main Navigation">
-      <div class="navbar__logo">Zolve AB</div>
+      <div class="navbar__logo">Zolve UF</div>
       <ul class="navbar__links" id="navbar-links">
         <li class="navbar__dropdown">
           <a href="#" class="dropdown__toggle"
@@ -159,6 +159,7 @@
       </div>
     </div>
   </div>
+  
 
   <!-- Navigationspilar -->
   <button class="slider__arrow slider__arrow--prev" aria-label="Föregående slide">
@@ -322,6 +323,53 @@
     slides[currentSlide].classList.add('active');
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const navbar = document.querySelector(".navbar");
+  let prevScrollPos = window.pageYOffset;
+  // Justera tröskelvärdet om du vill (ex. hero-sektionens höjd)
+  const scrollThreshold = 100; 
+
+  window.addEventListener("scroll", function() {
+    const currentScrollPos = window.pageYOffset;
+    const isMobile = window.innerWidth < 768; // Justera breakpoints vid behov
+
+    if (isMobile) {
+      // För mobil: byt bakgrund till vit efter 100px och låt navbaren vara fast synlig
+      if (currentScrollPos > scrollThreshold) {
+        navbar.classList.add("bg-white");
+      } else {
+        navbar.classList.remove("bg-white");
+      }
+      navbar.style.transform = "translateY(0)";
+    } else {
+      // För desktop: om man scrollar ner (och man passerat tröskeln) så döljs navbaren,
+      // om man scrollar upp så dyker den upp igen.
+      if (currentScrollPos > scrollThreshold) {
+        if (prevScrollPos > currentScrollPos) {
+          // Scrollar upp – visa navbaren
+          navbar.style.transform = "translateY(0)";
+        } else {
+          // Scrollar ner – göm navbaren
+          navbar.style.transform = "translateY(-100%)";
+        }
+      } else {
+        // Om man är över tröskeln (ex. i hero‑sektionen) ska navbaren alltid vara synlig
+        navbar.style.transform = "translateY(0)";
+      }
+      prevScrollPos = currentScrollPos;
+      if (currentScrollPos > 100) {
+        navbar.classList.add("bg-white");
+      } else {
+        navbar.classList.remove("bg-white");
+      }
+    }
+  });
+});
+
+
+
+
   </script>
 </body>
 </html>
