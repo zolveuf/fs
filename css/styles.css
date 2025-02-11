@@ -1,0 +1,937 @@
+:root {
+    /* Colors */
+    --primary-color: #b60000;       /* Main accent for buttons, links, etc. */
+    --secondary-color: #920000;     /* Secondary accent for highlights */
+    --background-color: #FFFFFF;    /* Default page background */
+    --background-color-2: #f7f7f7;
+    --text-color: #333333;          /* Primary text color */
+    --muted-text-color: #777777;    /* Subdued text for meta info, captions, etc. */
+  
+    /* Typography */
+    --font-family-base: "Montserrat", serif;
+    --base-font-size: 1rem;         /* 1rem equals 16px (assuming html font-size is 16px) */
+    --line-height: 1.5;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+  
+    /* Headings (using a modular scale) */
+    --h1-size: 2.5rem;
+    --h2-size: 2rem;
+    --h3-size: 1.75rem;
+    --h4-size: 1.5rem;
+    --h5-size: 1.25rem;
+    --h6-size: 1rem;
+  
+    /* Containers and Layout */
+    --max-width: 80rem;            /* 75rem equals 1200px (if 1rem = 16px) */
+    --container-padding: 2rem;
+  
+    /* Spacing Scale */
+    --spacing-xs: 0.25rem;          /* 0.25rem equals 4px */
+    --spacing-sm: 0.5rem;           /* 0.5rem equals 8px */
+    --spacing-md: 1rem;             /* 1rem equals 16px */
+    --spacing-lg: 1.5rem;           /* 1.5rem equals 24px */
+    --spacing-xl: 2rem;             /* 2rem equals 32px */
+  
+    /* Borders, Radii, and Shadows */
+    --border-radius: 0.25rem;       /* 0.25rem equals 4px */
+    --border-radius-lg: 1rem;
+    --box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* Equivalent to 0 2px 4px */
+  }
+  
+  /* Global Resets and Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px; /* Ensures 1rem = 16px */
+  }
+  
+  body {
+    font-family: var(--font-family-base);
+    font-size: var(--base-font-size);
+    line-height: var(--line-height);
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  h1 { font-size: var(--h1-size); }
+  h2 { font-size: var(--h2-size); }
+  h3 { font-size: var(--h3-size); }
+  h4 { font-size: var(--h4-size); }
+  h5 { font-size: var(--h5-size); }
+  h6 { font-size: var(--h6-size); }
+  
+/* Global container för konsekvent sidopadding */
+.container {
+  max-width: var(--max-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+
+/* Anpassning för mindre skärmar */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem; /* Minskar paddingen något på mobil */
+  }
+}
+  /* Global Button Styles */
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #000;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+  transition: all 0.3s ease;
+}
+
+/* Underline pseudo-element for a continuous line */
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Adjust this value as needed for positioning */
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+/* Arrow transition */
+.btn i {
+  transition: transform 0.3s ease;
+  color: var(--primary-color);
+}
+
+/* Hover Effects */
+.btn:hover i {
+  transform: translateX(5px);
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+/*----------------*/
+/* Navbar Styles  */
+/*----------------*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md) var(--container-padding);
+  background-color: transparent; /* Transparent background */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar__logo {
+  font-size: var(--h3-size);
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 0.2em;
+  column-gap: .25rem;
+}
+
+.navbar__logo:hover {
+  cursor: pointer;
+}
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.navbar__links li {
+  display: flex;
+  align-items: center;
+  position: relative; /* For dropdown positioning */
+}
+
+.navbar__links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: var(--font-weight-regular);
+  transition: color 0.3s ease;
+}
+
+.navbar__links a:hover {
+  color: var(--primary-color);
+}
+
+.navbar__cta {
+  background-color: transparent;
+  color: #000;
+  font-size: var(--h6-size);
+  border: 0.08rem solid #000;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-lg);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar__cta:hover {
+  border: #fff;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Hamburger Toggle (for Mobile) */
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 0.3rem;
+}
+
+.navbar__toggle span {
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: var(--text-color);
+  display: block;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.navbar__toggle span:nth-child(1) {
+  width: 1.9rem;
+}
+
+.navbar__toggle span:nth-child(2) {
+  width: 1.5rem;
+}
+
+.navbar__toggle span:nth-child(3) {
+  width: 1.8rem;
+}
+
+.navbar.active .navbar__toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar.active .navbar__toggle span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  width: 1.8rem;
+}
+
+.navbar.active .navbar__toggle span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+/*---------------------*/
+/* Dropdown Menu Styles */
+/*---------------------*/
+.navbar__dropdown {
+  position: relative;
+}
+
+.navbar__dropdown i {
+  transition: 0.15s all ease-in-out;
+}
+
+/* Arrow added to the dropdown toggle */
+.dropdown__toggle {
+  position: relative;
+  padding-right: 0.5rem; /* Space for the arrow */
+}
+
+.navbar__dropdown:hover {
+  color: var(--primary-color);
+}
+
+/* Rotate the arrow when dropdown is open */
+.navbar__dropdown.active i {
+  transform: rotate(180deg);
+}
+
+/* Default dropdown menu (desktop) */
+.dropdown__menu {
+  position: absolute;
+  top: 150%;
+  left: 0;
+  background-color: var(--background-color);
+  min-width: 10rem;
+  /* Instead of display:none, we use opacity and transform */
+  opacity: 0;
+  transform: translateY(-10%);
+  pointer-events: none;
+  flex-direction: column;
+  padding: var(--spacing-sm) var(--spacing-md);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  z-index: 100;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown__menu li a{
+  padding: var(--spacing-sm) 0 var(--spacing-md) 0;
+}
+
+.navbar__dropdown.active .dropdown__menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/*-------------------------------*/
+/* Responsive Mobile Styles      */
+/*-------------------------------*/
+
+@media (min-width: 1500px) {
+  .navbar {
+    max-width: var(--max-width);
+    justify-content: space-around;
+    margin: auto;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .navbar__links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 0; /* Remove padding in the collapsed state */
+    box-shadow: var(--box-shadow);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  }
+
+  .navbar__links a {
+    margin-left: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+  /* When the navbar is active, expand the mobile menu and add padding */
+  .navbar.active .navbar__links {
+    padding: var(--spacing-md) 0; /* Add padding when expanded */
+    max-height: 500px; /* Adjust as needed */
+  }
+
+  /* Hide the CTA on mobile */
+  .navbar__cta {
+    display: none;
+  }
+
+  /* Adjust dropdown for mobile view */
+  .navbar__dropdown .dropdown__menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .navbar__dropdown.active .dropdown__menu {
+    max-height: 500px; /* Adjust as needed */
+  }
+}
+
+/* Uppdaterade hero‑stilar (ta bort direkt sidopadding – den hanteras nu av .container) */
+.hero {
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(250, 252, 255, 0.6), rgba(255, 0, 0, 0.098)),
+    url('../DALL·E\ 2025-02-10\ 18.34.52\ -\ A\ modern\ and\ sleek\ hero\ image\ for\ a\ digital\ solutions\ company\,\ featuring\ a\ futuristic\ blue\ and\ white\ theme\ with\ abstract\ technology-inspired\ elements\ .webp') no-repeat center center/cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -80px;  /* Justera så att hero-bakgrunden ligger bakom navbaren */
+  padding-top: 80px;  /* Kompenserar för negativ marginal */
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.hero.lazy-bg {
+  background: linear-gradient(rgba(250, 252, 255, 0.6), rgba(255, 0, 0, 0.098)),
+    url('../utforska-img-2.jpg') no-repeat center center/cover;
+}
+
+
+.hero__content {
+  max-width: 700px;
+  color: #fff;
+}
+
+.hero__content h1 {
+  font-size: var(--h1-size);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero__content p {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.hero__content .feature__btn {
+  color: #fff;
+}
+
+.hero__content .btn::after {
+  background-color: #fff;
+}
+
+.hero__cta {
+  padding: 0.5rem 1.25rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight-bold);
+  transition: background-color 0.3s ease;
+}
+
+.hero__cta:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Anpassningar för hero på mindre skärmar */
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+    justify-content: center; /* Centrerar innehållet på mobil */
+    padding-top: 60px;
+  }
+  
+  .hero__content {
+    max-width: 90%;
+    text-align: center;
+    justify-content: center; /* Centrerar innehållet på mobil */
+  }
+  
+  .hero__content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero__content p {
+    font-size: 1rem;
+  }
+  
+  .hero__cta {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .hero {
+    justify-content: center; /* Centrerar innehållet på mobil */
+  }
+  .hero__content {
+    text-align: center;
+    justify-content: center; /* Centrerar innehållet på mobil */
+  }
+}
+
+.feature {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--background-color-2);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature__content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+}
+
+.feature__text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.feature__text h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.feature__text p {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.feature__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feature__image {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+
+.feature__image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* Offsetting the image for an asymmetrical, modern look */
+  transform: translateX(20%);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .feature__content {
+    flex-direction: column;
+  }
+  .feature__image img {
+    transform: none;
+    margin-top: var(--spacing-lg);
+  }
+}
+
+/* Gallery Section Base Styles */
+.gallery {
+  padding: var(--spacing-xl) 0;
+  background-color: #fefefe;
+  box-shadow: var(--box-shadow);
+}
+
+.gallery__title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-xl);
+  color: var(--text-color);
+}
+
+/* CSS Grid for Asymmetrical Layout */
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: var(--spacing-lg);
+}
+
+/* Base Card Styling */
+.gallery__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.gallery__item .feature__btn {
+  color: #fff;
+}
+
+.gallery__item .btn::after {
+  background-color: #fff;
+}
+
+.gallery__item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay Styling */
+.gallery__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md);
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.gallery__item:hover .gallery__overlay {
+  opacity: 1;
+}
+
+.gallery__overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Asymmetrical Item Variations */
+.gallery__item--large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery__item--tall {
+  grid-row: span 2;
+}
+
+.gallery__item--wide {
+  grid-column: span 2;
+}
+
+/* För enheter med touch (grovt pekargränssnitt, ingen hover) */
+@media (hover: none) and (pointer: coarse) {
+  .gallery__overlay {
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+  }
+}
+
+@media (max-width: 485px) {
+  .gallery__grid {
+    grid-template-columns: repeat(1, 2fr);
+    grid-auto-rows: 200px; /* or choose a fixed height that works for your design */
+    gap: var(--spacing-sm);
+  }
+  
+  /* Override any special spans so that all items are uniform */
+  .gallery__item--large,
+  .gallery__item--tall,
+  .gallery__item--wide {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+  
+  /* Ensure images fill their grid area */
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Fullscreen Slider Styles */
+.slider {
+  position: relative;
+  height: 80vh; /* Täcker 100% av viewport-höjden */
+  overflow: hidden;
+}
+
+.slider__slides {
+  position: relative;
+  height: 100%;
+}
+
+/* Varje slide */
+.slider__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  /* Använd flexbox för att placera innehållet (inuti .container) längst ner och centrerat */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10vh; /* Avstånd från botten */
+}
+
+.slider__slide.active {
+  opacity: 1;
+}
+
+/* Sliderinnehåll – ligger nu inuti din .container */
+.slider__content {
+  text-align: center;
+  color: #fff;
+}
+
+.slider__content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.slider__content p {
+  font-size: 1.25rem;
+}
+
+/* Navigationspilar */
+.slider__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.slider__arrow--prev {
+  left: 2%;
+}
+
+.slider__arrow--next {
+  right: 2%;
+}
+
+.slider__arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsiva anpassningar */
+@media (max-width: 768px) {
+  .slider__content h2 {
+    font-size: 1.6rem;
+  }
+  .slider__content p {
+    font-size: 1rem;
+  }
+  .slider__arrow {
+    padding: 0.75rem;
+  }
+  .slider {
+    height: 70vh; /* Täcker 100% av viewport-höjden */
+  }
+  .slider__slide {
+    align-items: flex-end;
+  }
+}
+
+/* Artiklar-sektionen */
+.articles {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--background-color);
+}
+
+.articles__title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-xl);
+  color: var(--text-color);
+}
+
+/* Grid-layout med auto-fit för responsivitet */
+.articles__grid {
+  display: grid;
+  gap: var(--spacing-xl);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Artikelkort */
+.article {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.article:hover {
+  transform: translateY(-5px);
+}
+
+.article__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.article__content {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.article__title {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.article__excerpt {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--muted-text-color);
+}
+
+/* Läs mer-knappen inuti artikeln */
+.article__readmore {
+  align-self: flex-start;
+}
+
+/* Container för knappen "Visa alla artiklar" */
+.articles__button {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+}
+
+/* Ytterligare responsiva anpassningar (om det behövs) */
+@media (max-width: 768px) {
+  .articles__title {
+    font-size: 2rem;
+  }
+  .article__img {
+    height: 150px;
+  }
+  .article__title {
+    font-size: 1.25rem;
+  }
+  .article__excerpt {
+    font-size: 0.9rem;
+  }
+}
+
+/* Footer grundstil */
+.footer {
+  background-color: #333;
+  color: #fff;
+  font-family: var(--font-family-base);
+  padding-top: var(--spacing-xl);
+}
+
+/* Övre delen av footern */
+.footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+/* Kolumner i footern */
+.footer__column {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: var(--spacing-xl);
+}
+
+.footer__column h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: #fff;
+}
+
+.footer__column p,
+.footer__column li {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.footer__column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer__column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__column ul li a:hover {
+  color: var(--primary-color);
+}
+
+/* Sociala länkar */
+.footer__social a {
+  color: #ccc;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+
+.footer__social a:hover {
+  color: var(--primary-color);
+}
+
+/* Bottenrad */
+.footer__bottom {
+  background-color: #222;
+  padding: var(--spacing-md) 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer__bottom p {
+  margin: 0.5rem 0;
+}
+
+/* Responsiva anpassningar */
+@media (max-width: 768px) {
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__column {
+    min-width: 100%;
+  }
+}
+
+
+  
+
+
+
+

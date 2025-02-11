@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zolve Navbar</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Preconnect for faster connection -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload Google Fonts stylesheet -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
+  <!-- Use media="print" trick to avoid blocking rendering, then switch to "all" once loaded -->
+  <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" 
+        media="print" 
+        onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
+  </noscript>
+
+  <!-- Preload Font Awesome stylesheet similarly -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        media="print" 
+        onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
+</head>
+<body>
+  <header role="banner">
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="navbar__logo">Zolve AB</div>
+      <ul class="navbar__links" id="navbar-links">
+        <li class="navbar__dropdown">
+          <a href="#" class="dropdown__toggle"
+             aria-haspopup="true" 
+             aria-expanded="false" 
+             aria-controls="dropdown-menu-tjanster">Tjänster</a>
+          <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          <ul class="dropdown__menu" id="dropdown-menu-tjanster">
+            <li><a href="#service1">Webbdesign</a></li>
+            <li><a href="#service2">SEO-optimering</a></li>
+            <li><a href="#service3">UX-design</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Kunduppdrag</a></li>
+        <li><a href="#about">Om oss</a></li>
+      </ul>
+      <a href="#contact" class="hero__cta">KONTAKTA</a>
+      <div class="navbar__toggle" role="button" tabindex="0"
+           aria-label="Toggle Navigation Menu" 
+           aria-expanded="false"
+           aria-controls="navbar-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero lazy-bg" data-bg-url="../utforska-img-4.jpg" role="region" aria-label="Hero Section">
+    <div class="hero__content">
+      <h1>Zolve UF är webbdesign</h1>
+      <p>Zolve UF skapar digitala lösningar som ökar lönsamheten, stärker varumärken och förbättrar användarupplevelsen.</p>
+      <a href="#services" class="btn feature__btn">
+        KONTAKTA OSS <i class="fa-solid fa-arrow-right"></i>
+      </a>    </div>
+  </section>
+
+  <section class="feature">
+    <div class="container feature__content">
+      <div class="feature__text">
+        <h2>Unga och drivna
+        </h2>
+        <p>
+          På Zolve UF visar vi att ålder inte är ett hinder för kvalitet. Vi är mycket billigare än andra företag och erbjuder en smidig och enkel process från start till mål. Med oss får du prisvärda lösningar av högsta kvalitet, skapade med engagemang och fokus på dina behov.
+
+        </p>
+        <a href="#services" class="btn feature__btn">
+          Vad vi gör <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="feature__image">
+        <img src="utforska-img-4.jpg" alt="Abstract illustration of digital innovation with futuristic elements" />
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="container">
+      <h2 class="gallery__title">Kundprojekt</h2>
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--large">
+          <img src="Ola-Ahlvarsson-Hero-img.avif" alt="Modern website design with creative layout" class="gallery__img">
+          <div class="gallery__overlay">
+            <h3>Ola Ahlvarsson</h3>
+            <a href="#services" class="btn feature__btn">
+              Discover More <i class="fa-solid fa-arrow-right"></i>
+            </a>          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="utforska-img-4.jpg" alt="Illustration of SEO optimization process" class="gallery__img">
+          <div class="gallery__overlay">
+            <h3>Josko Travels</h3>
+            <a href="#services" class="btn feature__btn">
+              Discover More <i class="fa-solid fa-arrow-right"></i>
+            </a>          </div>
+        </div>
+        <div class="gallery__item gallery__item--tall">
+          <img src="kontakta-oss-img.jpg" alt="User experience design with creative elements" class="gallery__img">
+          <div class="gallery__overlay">
+            <h3>Aurora Städ</h3>
+            <a href="#services" class="btn feature__btn">
+              Discover More <i class="fa-solid fa-arrow-right"></i>
+            </a>          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="IMG_9285.JPG" alt="Team collaborating on digital solutions" class="gallery__img">
+          <div class="gallery__overlay">
+            <h3>Mikael Syding</h3>
+               <a href="#services" class="btn feature__btn">
+              Discover More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+  </section>
+
+ <!-- Fullscreen Slider Section -->
+<section class="slider" role="region" aria-label="Fullscreen Slider">
+  <div class="slider__slides">
+    <!-- Slide 1 -->
+    <div class="slider__slide active" style="background-image: url('utforska-img-2.jpg');">
+      <div class="container slider__content">
+        <h2>Innovativa Digitala Lösningar</h2>
+        <p>Vi förvandlar idéer till verklighet med modern design och teknik.</p>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="slider__slide" style="background-image: url('utforska-img-4.jpg');">
+      <div class="container slider__content">
+        <h2>Kreativ Webbdesign</h2>
+        <p>Ditt varumärke förtjänar en imponerande digital närvaro.</p>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="slider__slide" style="background-image: url('Ola-Ahlvarsson-Hero-img.avif');">
+      <div class="container slider__content">
+        <h2>Användarcentrerad Utveckling</h2>
+        <p>Vi skapar sömlösa användarupplevelser för din framgång.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigationspilar -->
+  <button class="slider__arrow slider__arrow--prev" aria-label="Föregående slide">
+    <i class="fa-solid fa-arrow-left"></i>
+  </button>
+  <button class="slider__arrow slider__arrow--next" aria-label="Nästa slide">
+    <i class="fa-solid fa-arrow-right"></i>
+  </button>
+</section>
+
+<!-- Artiklar Section -->
+<section class="articles" role="region" aria-label="Artiklar">
+  <div class="container">
+    <h2 class="articles__title">Artiklar</h2>
+    <div class="articles__grid">
+      <!-- Artikel 1 -->
+      <article class="article">
+        <img src="utforska-img-2.jpg" alt="Bild på artikel 1" class="article__img">
+        <div class="article__content">
+          <h3 class="article__title">Artikelrubrik 1</h3>
+          <p class="article__excerpt">
+            Kort beskrivning av artikel 1 som ger en teaser om innehållet.
+          </p>
+          <a href="#article1" class="btn article__readmore">Läs mer</a>
+        </div>
+      </article>
+      
+      <!-- Artikel 2 -->
+      <article class="article">
+        <img src="utforska-img-4.jpg" alt="Bild på artikel 2" class="article__img">
+        <div class="article__content">
+          <h3 class="article__title">Artikelrubrik 2</h3>
+          <p class="article__excerpt">
+            Kort beskrivning av artikel 2 som väcker intresse.
+          </p>
+          <a href="#article2" class="btn article__readmore">Läs mer</a>
+        </div>
+      </article>
+      
+      <!-- Artikel 3 -->
+      <article class="article">
+        <img src="Ola-Ahlvarsson-Hero-img.avif" alt="Bild på artikel 3" class="article__img">
+        <div class="article__content">
+          <h3 class="article__title">Artikelrubrik 3</h3>
+          <p class="article__excerpt">
+            Kort beskrivning av artikel 3 som lockar läsare att klicka vidare.
+          </p>
+          <a href="#article3" class="btn article__readmore">Läs mer</a>
+        </div>
+      </article>
+      
+      <!-- Lägg till fler artiklar vid behov -->
+    </div>
+    <div class="articles__button">
+      <a href="/artiklar" class="btn">Visa alla artiklar</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer" role="contentinfo" aria-label="Footer">
+  <div class="footer__top container">
+    <!-- Om Zolve UF -->
+    <div class="footer__column footer__about">
+      <h3>Om Zolve UF</h3>
+      <p>
+        Vi är ett ungt och dynamiskt team som erbjuder moderna digitala lösningar med kreativitet och precision. Vi brinner för att förvandla idéer till verklighet.
+      </p>
+    </div>
+
+    <!-- Tjänster -->
+    <div class="footer__column footer__services">
+      <h3>Tjänster</h3>
+      <ul>
+        <li><a href="#webbdesign">Webbdesign</a></li>
+        <li><a href="#seo">SEO-optimering</a></li>
+        <li><a href="#ux">UX-design</a></li>
+      </ul>
+    </div>
+
+    <!-- Resurser -->
+    <div class="footer__column footer__resources">
+      <h3>Resurser</h3>
+      <ul>
+        <li><a href="#blog">Blogg</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </div>
+
+    <!-- Kontakt & Socialt -->
+    <div class="footer__column footer__contact">
+      <h3>Kontakt</h3>
+      <ul>
+        <li><i class="fa-solid fa-phone"></i> +46 76 808 42 64</li>
+        <li><i class="fa-solid fa-envelope"></i> zolveuf@gmail.com</li>
+        <li><i class="fa-solid fa-location-dot"></i> Ljungby, Sverige</li>
+      </ul>
+      <div class="footer__social">
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottenrad -->
+  <div class="footer__bottom">
+    <div class="container">
+      <p>&copy; 2025 Zolve UF. All rights reserved.</p>
+      <p>Made by Zolve UF</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <!-- Main content goes here -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const toggle = document.querySelector('.navbar__toggle');
+      const navbar = document.querySelector('.navbar');
+      
+      toggle.addEventListener('click', function() {
+        navbar.classList.toggle('active');
+        // Update aria-expanded for the mobile menu toggle
+        const expanded = toggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
+        toggle.setAttribute('aria-expanded', expanded);
+      });
+      
+      // Dropdown toggle for "Tjänster"
+      const dropdownToggle = document.querySelector('.dropdown__toggle');
+      if (dropdownToggle) {
+        dropdownToggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          // Toggle the 'active' class on the parent <li>
+          this.parentElement.classList.toggle('active');
+          // Update aria-expanded for the dropdown toggle
+          const expanded = this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
+          this.setAttribute('aria-expanded', expanded);
+        });
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.slider__slide');
+  let currentSlide = 0;
+  const nextBtn = document.querySelector('.slider__arrow--next');
+  const prevBtn = document.querySelector('.slider__arrow--prev');
+
+  nextBtn.addEventListener('click', function() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  });
+
+  prevBtn.addEventListener('click', function() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+  });
+});
+  </script>
+</body>
+</html>
