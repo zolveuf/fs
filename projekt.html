@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zolve UF</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Preconnect for faster connection -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload and non-blocking load for Google Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
+  <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" 
+        media="print" 
+        onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
+  </noscript>
+
+  <!-- Preload and non-blocking load for Font Awesome -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        media="print" 
+        onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
+</head>
+<body>
+  <!-- Skip to content link for keyboard users -->
+
+  <header role="banner">
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="navbar__logo"><a href="index.html">Zolve UF</a></div>
+      <ul class="navbar__links" id="navbar-links">
+        <li class="navbar__dropdown">
+          <a href="#"
+             class="dropdown__toggle"
+             aria-haspopup="true" 
+             aria-expanded="false" 
+             aria-controls="dropdown-menu-tjanster">
+            Tjänster
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown__menu" id="dropdown-menu-tjanster">
+            <li><a href="webbdesign.html">Webbdesign</a></li>
+            <li><a href="seo.html">SEO-optimering</a></li>
+            <li><a href="ux-design.html">UX-design</a></li>
+          </ul>
+        </li>
+        <li><a href="projekt.html">Kunduppdrag</a></li>
+        <li><a href="om-oss.html">Om oss</a></li>
+      </ul>
+      <a href="contact.html" class="hero__cta">KONTAKTA</a>
+      <div class="navbar__toggle" role="button" tabindex="0"
+           aria-label="Toggle Navigation Menu" 
+           aria-expanded="false"
+           aria-controls="navbar-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Wrap the primary content in a main landmark -->
+    <section class="hero lazy-bg" data-bg-url="../utforska-img-4.jpg" role="region" aria-label="Hero Section">
+      <div class="hero__content">
+        <h1>Zolve UF är webbdesign</h1>
+        <p>
+          Zolve UF skapar digitala lösningar som ökar lönsamheten, stärker varumärken och förbättrar användarupplevelsen.
+        </p>
+        <a href="#services" class="btn feature__btn">
+          KONTAKTA OSS <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+    <main class="main-content">
+        <div class="container">
+          <section class="customer-cases">
+            <div class="customer-cases__grid">
+              <!-- Kundcase 1 -->
+              <article class="customer-case">
+                <a href="kundcase1.html" class="customer-case__link">
+                  <div class="customer-case__image-wrapper">
+                    <img src="utforska-img-2.jpg" alt="Kundcase 1" class="customer-case__image">
+                  </div>
+                  <div class="customer-case__content">
+                    <h2 class="customer-case__title">Kundcase 1</h2>
+                    <p class="customer-case__description">En kort beskrivning av projektet.</p>
+                  </div>
+                </a>
+              </article>
+    
+              <!-- Kundcase 2 -->
+              <article class="customer-case">
+                <a href="kundcase2.html" class="customer-case__link">
+                  <div class="customer-case__image-wrapper">
+                    <img src="utforska-img-2.jpg" alt="Kundcase 2" class="customer-case__image">
+                  </div>
+                  <div class="customer-case__content">
+                    <h2 class="customer-case__title">Kundcase 2</h2>
+                    <p class="customer-case__description">En kort beskrivning av projektet.</p>
+                  </div>
+                </a>
+              </article>
+
+                            <!-- Kundcase 2 -->
+                            <article class="customer-case">
+                                <a href="kundcase2.html" class="customer-case__link">
+                                  <div class="customer-case__image-wrapper">
+                                    <img src="utforska-img-2.jpg" alt="Kundcase 2" class="customer-case__image">
+                                  </div>
+                                  <div class="customer-case__content">
+                                    <h2 class="customer-case__title">Kundcase 2</h2>
+                                    <p class="customer-case__description">En kort beskrivning av projektet.</p>
+                                  </div>
+                                </a>
+                              </article>
+    
+              <!-- Fler kundcase kan läggas till -->
+            </div>
+          </section>
+        </div>
+      </main>
+  <!-- Footer Section -->
+  <footer class="footer" role="contentinfo" aria-label="Footer">
+    <div class="footer__top container">
+      <!-- Om Zolve UF -->
+      <div class="footer__column footer__about">
+        <h3>Om Zolve UF</h3>
+        <p>
+          Vi är ett ungt och dynamiskt team som erbjuder moderna digitala lösningar med kreativitet och precision. Vi brinner för att förvandla idéer till verklighet.
+        </p>
+      </div>
+
+      <!-- Tjänster -->
+      <div class="footer__column footer__services">
+        <h3>Tjänster</h3>
+        <ul>
+          <li><a href="#webbdesign">Webbdesign</a></li>
+          <li><a href="#seo">SEO-optimering</a></li>
+          <li><a href="#ux">UX-design</a></li>
+        </ul>
+      </div>
+
+      <!-- Resurser -->
+      <div class="footer__column footer__resources">
+        <h3>Resurser</h3>
+        <ul>
+          <li><a href="#blog">Blogg</a></li>
+          <li><a href="#support">Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Kontakt & Socialt -->
+      <div class="footer__column footer__contact">
+        <h3>Kontakt</h3>
+        <ul>
+          <li>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i> +46 76 808 42 64
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> zolveuf@gmail.com
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Ljungby, Sverige
+          </li>
+        </ul>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottenrad -->
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2025 Zolve UF. All rights reserved.</p>
+        <p>Made by Zolve UF</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Combined JavaScript for interactivity and accessibility -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>

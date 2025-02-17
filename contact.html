@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zolve UF</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Preconnect for faster connection -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload and non-blocking load for Google Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
+  <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" 
+        media="print" 
+        onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
+  </noscript>
+
+  <!-- Preload and non-blocking load for Font Awesome -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        media="print" 
+        onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
+</head>
+<body>
+  <!-- Skip to content link for keyboard users -->
+
+  <header role="banner">
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="navbar__logo"><a href="index.html">Zolve UF</a></div>
+      <ul class="navbar__links" id="navbar-links">
+        <li class="navbar__dropdown">
+          <a href="#"
+             class="dropdown__toggle"
+             aria-haspopup="true" 
+             aria-expanded="false" 
+             aria-controls="dropdown-menu-tjanster">
+            Tjänster
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown__menu" id="dropdown-menu-tjanster">
+            <li><a href="webbdesign.html">Webbdesign</a></li>
+            <li><a href="seo.html">SEO-optimering</a></li>
+            <li><a href="ux-design.html">UX-design</a></li>
+          </ul>
+        </li>
+        <li><a href="projekt.html">Kunduppdrag</a></li>
+        <li><a href="om-oss.html">Om oss</a></li>
+      </ul>
+      <a href="contact.html" class="hero__cta">KONTAKTA</a>
+      <div class="navbar__toggle" role="button" tabindex="0"
+           aria-label="Toggle Navigation Menu" 
+           aria-expanded="false"
+           aria-controls="navbar-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+<!-- Hero Section -->
+<section class="hero-2">
+  <div class="hero-2-overlay"></div>
+  <div class="container">
+    <h1>Kontakta oss</h1>
+    <p>Vi finns här för att hjälpa – hör av dig så återkommer vi snarast.</p>
+  </div>
+</section>
+
+<!-- Asymmetrical Contact Section -->
+<main id="main-content">
+  <section class="contact-section">
+    <div class="container contact-container">
+      <!-- Left Column: Kontaktuppgifter -->
+      <div class="contact-info">
+        <h4>Kontaktinformation</h4>
+        <p>Ring eller skriv till oss direkt:</p>
+        <ul>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <strong>E-post:</strong> 
+            <a href="mailto:kontakt@zolveuf.com">kontakt@zolveuf.com</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <strong>Telefon:</strong> 
+            <a href="tel:+46123456789"> +46 12 345 6789</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Right Column: Kontaktformulär -->
+      <div class="contact-form-wrapper">
+        <h2>Skicka ett meddelande</h2>
+        <form class="contact-form" action="submit_contact.php" method="post">
+          <div class="form-group">
+            <label for="name">Namn</label>
+            <input type="text" id="name" name="name" placeholder="Ditt namn" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email" placeholder="Din e-postadress" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Ämne</label>
+            <input type="text" id="subject" name="subject" placeholder="Ämne" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Meddelande</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ditt meddelande" required></textarea>
+          </div>
+          <button type="submit" class="btn">
+            Skicka meddelande <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- Footer Section -->
+  <footer class="footer" role="contentinfo" aria-label="Footer">
+    <div class="footer__top container">
+      <!-- Om Zolve UF -->
+      <div class="footer__column footer__about">
+        <h3>Om Zolve UF</h3>
+        <p>
+          Vi är ett ungt och dynamiskt team som erbjuder moderna digitala lösningar med kreativitet och precision. Vi brinner för att förvandla idéer till verklighet.
+        </p>
+      </div>
+
+      <!-- Tjänster -->
+      <div class="footer__column footer__services">
+        <h3>Tjänster</h3>
+        <ul>
+          <li><a href="#webbdesign">Webbdesign</a></li>
+          <li><a href="#seo">SEO-optimering</a></li>
+          <li><a href="#ux">UX-design</a></li>
+        </ul>
+      </div>
+
+      <!-- Resurser -->
+      <div class="footer__column footer__resources">
+        <h3>Resurser</h3>
+        <ul>
+          <li><a href="#blog">Blogg</a></li>
+          <li><a href="#support">Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Kontakt & Socialt -->
+      <div class="footer__column footer__contact">
+        <h3>Kontakt</h3>
+        <ul>
+          <li>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i> +46 76 808 42 64
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> zolveuf@gmail.com
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Ljungby, Sverige
+          </li>
+        </ul>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottenrad -->
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2025 Zolve UF. All rights reserved.</p>
+        <p>Made by Zolve UF</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Combined JavaScript for interactivity and accessibility -->
+  <script src="script.js" defer>
+
+  </script>
+
+</body>
+</html>
