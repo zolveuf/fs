@@ -3,8 +3,8 @@
    ========================================================================== */
    :root {
     /* Colors */
-    --primary-color: #b60000;       /* Main accent for buttons, links, etc. */
-    --secondary-color: #920000;     /* Secondary accent for highlights */
+    --primary-color: #003366;       /* Main accent for buttons, links, etc. */
+    --secondary-color: #000292;     /* Secondary accent for highlights */
     --background-color: #FFFFFF;    /* Default page background */
     --background-color-2: #f1f1f1;    /* Alternative background */
     --text-color: #333333;          /* Primary text color */
@@ -55,6 +55,7 @@
   
   html {
     font-size: 16px; /* 1rem = 16px */
+    scroll-behavior: smooth;
   }
   
   body {
@@ -502,12 +503,11 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-xl);
-    flex-wrap: wrap;
+    overflow: hidden;
   }
   
   .feature__text {
     flex: 1;
-    min-width: 300px;
   }
   
   .feature__text h2 {
@@ -967,7 +967,7 @@
   }
   
 /* ========================================================================== 
-   Hero Section
+   Hero 2 Section
    ========================================================================== */
 
 /* Animation för zoom in/out */
@@ -1011,10 +1011,17 @@
   @media (min-width: 900px) {
     .hero-2 {
       animation: zoomInOut 20s ease-in-out infinite;
+      height: 50vh;
     }
   }
 
-  
+  /* ========================================================================== 
+   Hero 3 Section
+   ========================================================================== */
+
+  .hero-3 {
+    background: rgb(2,0,36);
+    }
   /* ========================================================================== 
      Asymmetrical Contact Section
      ========================================================================== */
@@ -1178,7 +1185,6 @@
       background-color: #fff;
       padding: var(--spacing-md);
       border-radius: var(--border-radius);
-      box-shadow: var(--box-shadow);
       text-align: center;
     }
     .team .member img {
@@ -1188,10 +1194,17 @@
       object-fit: cover;
       margin-bottom: var(--spacing-md);
     }
+    .values {
+      margin-bottom: var(--spacing-xl);
+    }
     .values .values-list {
       display: flex;
       flex-wrap: wrap;
       gap: var(--spacing-lg);
+    }
+    .values h1 {
+      text-align: center;
+      padding-bottom: var(--spacing-xl);
     }
     .values .value {
       flex: 1 1 300px;
@@ -1219,8 +1232,8 @@
   transition: transform 0.3s ease;
 }
 
-.customer-case:hover {
-  transform: translateY(-5px);
+.customer-case:hover .customer-case__image {
+  filter: brightness(1.25);
 }
 
 .customer-case__link {
@@ -1236,8 +1249,9 @@
 
 .customer-case__image {
   width: 100%;
-  height: 300px;
+  height: auto;
   display: block;
+  transition: all 0.3s ease;
 }
 
 .customer-case__content {
@@ -1742,4 +1756,8 @@
 .faq__answer p {
   padding: var(--spacing-sm) 0;
   font-size: var(--base-font-size);
+}
+
+.kunder__hero {
+  background-color: var(--background-color);
 }
