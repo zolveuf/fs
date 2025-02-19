@@ -1127,9 +1127,17 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
+
+  .contact-form .btn i {
+    transition: all 0.3s ease;
+  }
   
   .contact-form .btn:hover {
     background-color: var(--secondary-color);
+  }
+
+  .contact-form .btn:hover i {
+    color: #ddd;
   }
   
   /* ========================================================================== 
@@ -1618,19 +1626,21 @@
 .features {
   padding: var(--spacing-lg) 0;
   background: var(--background-color);
-  text-align: center;
+  text-align: left;
 }
 
 .features__title {
   font-size: var(--h2-size);
   color: var(--primary-color);
   margin-bottom: var(--spacing-md);
+  text-align: center;
 }
 
 .features__grid {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
+  padding: var(--spacing-md) 0 var(--spacing-md) 0;
 }
 
 @media (min-width: 768px) {
@@ -1645,6 +1655,19 @@
   padding: var(--spacing-md);
   border-radius: var(--border-radius);
   background: var(--background-color-2);
+}
+
+.feature ul p {
+  padding-top: var(--spacing-md);
+}
+
+
+.feature__item {
+  flex: 1;
+}
+
+.feature__item p {
+  max-width: 500px;
 }
 
 .feature__title {
@@ -1702,6 +1725,7 @@
    ========================================================================== */
 .faq {
   padding: var(--spacing-lg) 0;
+  margin-bottom: var(--spacing-xl);
   background: var(--background-color);
 }
 
@@ -1760,4 +1784,15 @@
 
 .kunder__hero {
   background-color: var(--background-color);
+}
+
+.hero__tjänster {
+  background: url('../hero-img.jpg') center/cover no-repeat;
+}
+
+.hero__tjanster__content {
+  max-width: 700px;
+  color: #fff;
+  margin-top: 60vh;
+  text-align: left;
 }
