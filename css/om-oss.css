@@ -1,0 +1,59 @@
+  /* ========================================================================== 
+    Om Oss Styles
+     ========================================================================== */
+
+     .our-story,
+     .team,
+     .values {
+       padding: var(--spacing-xl) 0;
+     }
+     .our-story .content {
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       gap: var(--spacing-xl);
+     }
+     .our-story .content .text {
+       flex: 1 1 400px;
+     }
+     .our-story .content .image {
+       flex: 1 1 400px;
+     }
+     .our-story .content .image img {
+       width: 100%;
+       border-radius: var(--border-radius);
+       box-shadow: var(--box-shadow);
+     }
+     .team .team-members {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+       gap: var(--spacing-lg);
+     }
+     .team .member {
+       background-color: #fff;
+       padding: var(--spacing-md);
+       border-radius: var(--border-radius);
+       text-align: center;
+     }
+     .team .member img {
+       width: 150px;
+       height: 150px;
+       border-radius: 50%;
+       object-fit: cover;
+       margin-bottom: var(--spacing-md);
+     }
+     .values {
+       margin-bottom: var(--spacing-xl);
+     }
+     .values .values-list {
+       display: flex;
+       flex-wrap: wrap;
+       gap: var(--spacing-lg);
+     }
+     .values h1 {
+       text-align: center;
+       padding-bottom: var(--spacing-xl);
+     }
+     .values .value {
+       flex: 1 1 300px;
+     }

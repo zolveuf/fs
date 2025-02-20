@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Kundcase Styles
+========================================================================== */
+  /* Kundcase sektion */
+  .customer-cases__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: var(--spacing-md);
+  }
+  
+  .customer-case {
+    background-color: var(--background-color);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .customer-case:hover .customer-case__image {
+    filter: brightness(1.25);
+  }
+  
+  .customer-case__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .customer-case__image-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .customer-case__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .customer-case__content {
+    padding: var(--spacing-md);
+  }
+  
+  .customer-case__title {
+    font-size: var(--h3-size);
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+  }
+  
+  .customer-case__description {
+    color: var(--muted-text-color);
+  }
+  
+  /* Responsivitet */
+  /* Tablet och upp */
+  @media (min-width: 768px) {
+    .customer-cases__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 1024px) {
+    .customer-cases__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .hero-3 {
+    background: rgb(2,0,36);
+    }
+  
