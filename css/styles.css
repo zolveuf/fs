@@ -647,6 +647,7 @@
     
     .hero__2__content {
       max-width: 700px;
+      min-width: 250px;
       color: #fff;
       margin-top: 60vh;
       text-align: left;
