@@ -419,7 +419,7 @@
       background: none;
       border: none;
       padding: var(--spacing-sm);
-      font-size: var(--h3-size);
+      font-size: var(--h4-size);
       cursor: pointer;
       position: relative;
     }
