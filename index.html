@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/index.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
+
   <!-- Preconnect for faster connection -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,7 +74,7 @@
 
   <!-- Wrap the primary content in a main landmark -->
   <main id="main-content">
-    <section class="hero lazy-bg" data-bg-url="../utforska-img-4.jpg" role="region" aria-label="Hero Section">
+    <section class="hero lazy-bg" data-bg-url="../utforska-img-4.jpg" role="region" aria-label="Hero Section"  data-aos="fade-in">
       <div class="hero__content">
         <h1>Zolve UF är webbdesign</h1>
         <p>
@@ -83,7 +86,7 @@
       </div>
     </section>
 
-    <section class="feature">
+    <section class="feature"  data-aos="fade-in">
       <div class="container feature__content">
         <div class="feature__text">
           <h2>Unga och drivna</h2>
@@ -101,7 +104,7 @@
       </div>
     </section>
 
-    <section class="gallery" role="region" aria-label="Kundprojekt">
+    <section class="gallery" role="region" aria-label="Kundprojekt" data-aos="fade-in">
       <div class="container">
         <h2 class="gallery__title">Kundprojekt</h2>
         <div class="gallery__grid">
@@ -155,7 +158,7 @@
     </section>
 
     <!-- Fullscreen Slider Section -->
-    <section class="slider" role="region" aria-label="Fullscreen Slider">
+    <section class="slider" role="region" aria-label="Fullscreen Slider"  data-aos="fade-in">
       <div class="slider__slides">
         <!-- Slide 1 -->
         <div class="slider__slide active home-webbdesign-img">
@@ -190,7 +193,7 @@
     </section>
 
     <!-- Artiklar Section -->
-    <section class="articles" role="region" aria-label="Artiklar">
+    <section class="articles" role="region" aria-label="Artiklar"  data-aos="fade-in">
       <div class="container">
         <h2 class="articles__title">Artiklar</h2>
         <div class="articles__grid">
@@ -209,7 +212,7 @@
           </article>
           
           <!-- Artikel 2 -->
-          <article class="article">
+          <article class="article"  >
             <img src="utforska-img-4.jpg" 
                  alt="Artikelbild för Artikelrubrik 2" 
                  class="article__img" loading="lazy">
@@ -246,7 +249,7 @@
   </main>
 
   <!-- Footer Section -->
-  <footer class="footer" role="contentinfo" aria-label="Footer">
+  <footer class="footer" role="contentinfo" aria-label="Footer" data-aos="fade-in">
     <div class="footer__top container">
       <!-- Om Zolve UF -->
       <div class="footer__column footer__about">
@@ -314,6 +317,7 @@
 
   <!-- Combined JavaScript for interactivity and accessibility -->
   <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 
 </body>
 </html>

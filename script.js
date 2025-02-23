@@ -110,3 +110,8 @@ document.addEventListener('DOMContentLoaded', function() {
         currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         slides[currentSlide].classList.add('active');
       });
+
+      AOS.init({
+        duration: 1200, // Animationens varaktighet i ms
+        once: true      // Animationen sker bara en gång när elementet blir synligt
+      });
