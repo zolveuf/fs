@@ -423,6 +423,12 @@
       cursor: pointer;
       position: relative;
     }
+
+    .faq__question h4 {
+      width: 90%;
+      margin-bottom: var(--spacing-sm);
+      color: #000;
+    }
     
     .faq__question::after {
       content: "+";
