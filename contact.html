@@ -70,40 +70,68 @@
   </header>
 
 <!-- Hero Section -->
-<section class="hero-2">
-  <div class="hero-2-overlay"></div>
-  <div class="container">
-    <h1>Kontakta oss</h1>
-    <p>Vi finns här för att hjälpa – hör av dig så återkommer vi snarast.</p>
+<section class="hero lazy-bg" data-bg-url="../utforska-img-4.jpg" role="region" aria-label="Hero Section">
+  <div class="hero__2__content">
+    <h1>KONTAKTA OSS</h1>
   </div>
 </section>
 
 <!-- Asymmetrical Contact Section -->
 <main id="main-content">
-  <section class="contact-section">
-    <div class="container contact-container">
-      <!-- Left Column: Kontaktuppgifter -->
-      <div class="contact-info">
-        <h4>Kontaktinformation</h4>
-        <p>Ring eller skriv till oss direkt:</p>
-        <ul>
-          <li>
-            <i class="fa-solid fa-envelope"></i>
-            <strong>E-post:</strong> 
-            <a href="mailto:zolveuf@gmail.com">zolveuf@gmail.com</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-phone"></i>
-            <strong>Telefon:</strong> 
-            <a href="tel:+46768084264"> +46 76 808 42 64</a>
-          </li>
-        </ul>
+      <!-- VD Kontakt - Två Boxar -->
+      <section class="executive-contact">
+        <div class="container">
+          <!-- Box med VD:s bild -->
+
+          <!-- Box med VD:s kontaktuppgifter -->
+          <div class="executive-box">
+            <h3>Martin Pranjic</h3>
+            <div class="image-box">
+              <img src="images/martin.webp" alt="Bild på VD">
+            </div>
+            <p><strong>VD</strong> och <strong>webbutvecklare</strong></p>
+            <a href="contact.html" class="btn feature__btn">
+              070-123 4567 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <br>
+            <a href="contact.html" class="btn feature__btn">
+              zolveuf@gmail.com <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="executive-box">
+            <h3>Oscar Johansson</h3>
+            <div class="image-box">
+              <img src="images/oscar.webp" alt="Bild på VD">
+            </div>
+            <p><strong>Ekonomiansvarig</strong> och <strong>webbutvecklare</strong></p>
+            <a href="contact.html" class="btn feature__btn">
+              070-123 4567 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <br>
+            <a href="contact.html" class="btn feature__btn">
+              zolveuf@gmail.com <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+        </div>
+      </section>
+  <!-- Kontaktinformation & formulär -->
+  <section class="contact-info">
+    <div class="container">
+      <!-- Kontaktuppgifter -->
+      <div class="contact-details">
+        <h2>Våra uppgifter</h2>
+        <p><strong>Adress:</strong> 341 40, Ljungby</p>
+        <p><strong>Telefon:</strong> 012-345 6789</p>
+        <p><strong>E-post:</strong> zolveuf@gmail.com</p>
       </div>
-      <!-- Right Column: Kontaktformulär -->
-      <div class="contact-form-wrapper">
-        <h2>Skicka ett meddelande</h2>
-        <form class="contact-form" action="https://api.web3forms.com/submit" method="post">
-          <input type="hidden" name="access_key" value="be37b79d-ff9b-4f95-b048-82b7e9c9ae1e">
+
+
+      <!-- Kontaktformulär -->
+      <div class="contact-form">
+        <h2>Hör av dig!</h2>
+        <p style="margin-bottom: 2rem;">Fyll i formuläret så hör vi av oss så fort vi kan.</p>
+        <form action="mailto:info@zolveuf.se" method="post" enctype="text/plain">
           <div class="form-group">
             <label for="name">Namn</label>
             <input type="text" id="name" name="name" placeholder="Ditt namn" required>
@@ -113,20 +141,17 @@
             <input type="email" id="email" name="email" placeholder="Din e-postadress" required>
           </div>
           <div class="form-group">
-            <label for="subject">Ämne</label>
-            <input type="text" id="subject" name="subject" placeholder="Ämne" required>
-          </div>
-          <div class="form-group">
             <label for="message">Meddelande</label>
-            <textarea id="message" name="message" rows="5" placeholder="Ditt meddelande" required></textarea>
+            <textarea id="message" name="message" rows="6" placeholder="Ditt meddelande" required></textarea>
           </div>
-          <button type="submit" class="btn">
-            Skicka meddelande <i class="fa-solid fa-paper-plane"></i>
-          </button>
+          <button type="submit" class="btn">Skicka<i class="fa-solid fa-paper-plane"></i></button>
         </form>
       </div>
     </div>
   </section>
+
+
+
 </main>
 
   <!-- Footer Section -->

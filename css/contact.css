@@ -1,135 +1,164 @@
- /* ========================================================================== 
-     Asymmetrical Contact Section
-     ========================================================================== */
-     .contact-section {
-        padding: var(--spacing-xl) 0;
-        background-color: var(--background-color-2);
-      }
+/* ==========================================================================  
+   Kontakt-Sida Specifik Styling  
+   ========================================================================== */
+
+/* Hero-sektion */
+.contact-hero {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: var(--h1-size);
+}
+
+.contact-hero p {
+  font-size: var(--base-font-size);
+}
+
+/* Kontaktinformation & formulär */
+.contact-info {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--background-color-2);
+}
+
+.contact-info .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl);
+  justify-content: space-between;
+}
+
+/* Kontaktuppgifter */
+.contact-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-details h2 {
+  font-size: var(--h2-size);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Kontaktformulär */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form h2 {
+  font-size: var(--h2-size);
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: var(--spacing-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: var(--spacing-sm);
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-size: var(--base-font-size);
+}
+
+/* Responsiva justeringar för kontaktinfo */
+@media (max-width: 768px) {
+  .contact-info .container {
+    flex-direction: column;
+  }
+}
+
+/* ==========================================================================  
+   VD Kontakt - Två Boxar  
+   ========================================================================== */
+.executive-contact {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--background-color-2);
+}
+
+.executive-contact .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl);
+  justify-content: center;
+  align-items: center;
+}
+
+.executive-box {
+  flex: 1;
+  min-width: 280px;
+  background-color: var(--background-color);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.executive-box a {
+  color: #000292;
+  padding-top: var(--spacing-lg);
+}
+
+
+.image-box img {
+  max-width: 28%;
+  height: auto;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-md);
+}
+
+.details-box h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.details-box p {
+  margin-bottom: var(--spacing-xs);
+}
+
+@media (max-width: 768px) {
+  .executive-contact .container {
+    flex-direction: column;
+  }
+}
+
       
-      .contact-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: var(--spacing-lg);
-      }
-      
-      .contact-info {
-        flex: 1 1 300px;
-        max-width: 35%;
-        padding: var(--spacing-md);
-      }
-      
-      .contact-info h2 {
-        margin-bottom: var(--spacing-sm);
-        overflow: hidden;
-      }
-      
-      .contact-info p {
-        margin-bottom: var(--spacing-md);
-        color: var(--muted-text-color);
-      }
-      
-      .contact-info ul {
-        list-style: none;
-        padding: 0;
-        margin: var(--spacing-md) 0;
-      }
-      
-      .contact-info ul li {
-        display: flex;
-        align-items: center;
-        margin-bottom: var(--spacing-sm);
-        font-size: 1rem;
-      }
-      
-      .contact-info ul li i {
-        margin-right: var(--spacing-xs);
-        color: var(--primary-color);
-      }
-      
-      .contact-form-wrapper {
-        flex: 2 1 300px;
-        max-width: 65%;
-        padding: var(--spacing-lg);
-        background-color: var(--background-color);
-        border-radius: var(--border-radius-lg);
-        box-shadow: var(--box-shadow);
-      }
-      
-      .contact-form-wrapper h2 {
-        margin-bottom: var(--spacing-md);
-        color: var(--text-color);
-      }
-      
-      /* ========================================================================== 
-         Contact Form Styles
-         ========================================================================== */
-      .contact-form .form-group {
-        margin-bottom: var(--spacing-md);
-      }
-      
-      .contact-form .form-group label {
-        display: block;
-        margin-bottom: var(--spacing-xs);
-        font-weight: var(--font-weight-medium);
-        color: var(--text-color);
-      }
-      
-      .contact-form .form-group input,
-      .contact-form .form-group textarea {
-        width: 100%;
-        padding: var(--spacing-sm);
-        border: 1px solid #ddd;
-        border-radius: var(--border-radius);
-        font-size: 1rem;
-        transition: border-color 0.3s ease, box-shadow 0.3s ease;
-      }
-      
-      .contact-form .form-group input:focus,
-      .contact-form .form-group textarea:focus {
-        border-color: #000;
-        outline: none;
-      }
-      
-      .contact-form .btn {
-        display: block;
-        width: 100%;
-        padding: var(--spacing-md);
-        margin-top: var(--spacing-md);
-        background-color: var(--primary-color);
-        color: #fff;
-        border: none;
-        border-radius: var(--border-radius);
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-    
-      .contact-form .btn i {
-        transition: all 0.3s ease;
-      }
-      
-      .contact-form .btn:hover {
-        background-color: var(--secondary-color);
-      }
-    
-      .contact-form .btn:hover i {
-        color: #ddd;
-      }
-      
-      /* ========================================================================== 
-         Responsive Adjustments
-         ========================================================================== */
-      @media (max-width: 768px) {
-        .contact-container {
-          flex-direction: column;
-        }
-        .contact-info,
-        .contact-form-wrapper {
-          max-width: 100%;
-          padding: var(--spacing-md);
-        }
-        .hero {
-          justify-content: center;
-          text-align: center;
-        }
-      }
+.contact-form .btn {
+  display: block;
+  width: 100%;
+  padding: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn i {
+  transition: all 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.contact-form .btn:hover i {
+  color: #ddd;
+}
