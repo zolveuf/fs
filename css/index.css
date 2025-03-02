@@ -301,8 +301,8 @@
          CTA Section
          ========================================================================== */
          .call__to__action {
-          height: 40vw;
-          padding: var(--spacing-xl);
+          height: auto;
+          padding: calc(var(--spacing-xl) + 7rem) 0;
           text-align: center;
           background-color: var(--background-color-2);
           align-content: center;
