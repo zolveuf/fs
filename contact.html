@@ -7,6 +7,8 @@
   <!-- Link to external CSS file -->
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
 
   <!-- Preconnect for faster connection -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,19 +74,19 @@
 <!-- Hero Section -->
 <section class="hero lazy-bg" data-bg-url="../utforska-img-4.jpg" role="region" aria-label="Hero Section">
   <div class="hero__2__content">
-    <h1>KONTAKTA OSS</h1>
+    <h1 data-aos="fade-down" data-aos-duration="1000">KONTAKTA OSS</h1>
   </div>
 </section>
 
 <!-- Asymmetrical Contact Section -->
-<main id="main-content">
+<main id="main-content" style="background-color: #f1f1f1;">
       <!-- VD Kontakt - Två Boxar -->
       <section class="executive-contact">
         <div class="container">
           <!-- Box med VD:s bild -->
 
           <!-- Box med VD:s kontaktuppgifter -->
-          <div class="executive-box">
+          <div class="executive-box" data-aos="fade-right" data-aos-duration="1000">
             <h3>Martin Pranjic</h3>
             <div class="image-box">
               <img src="images/martin.webp" alt="Bild på VD">
@@ -98,7 +100,7 @@
               zolveuf@gmail.com <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
             </a>
           </div>
-          <div class="executive-box">
+          <div class="executive-box" data-aos="fade-up" data-aos-duration="1000">
             <h3>Oscar Johansson</h3>
             <div class="image-box">
               <img src="images/oscar.webp" alt="Bild på VD">
@@ -116,7 +118,7 @@
         </div>
       </section>
   <!-- Kontaktinformation & formulär -->
-  <section class="contact-info">
+  <section class="contact-info" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
       <!-- Kontaktuppgifter -->
       <div class="contact-details">
@@ -222,9 +224,8 @@
   </footer>
 
   <!-- Combined JavaScript for interactivity and accessibility -->
-  <script src="script.js" defer>
-
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js" defer></script>
 
 </body>
 </html>

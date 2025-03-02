@@ -1,5 +1,8 @@
 
-
+AOS.init({
+  duration: 1200, // Animationens varaktighet i ms
+  once: true      // Animationen sker bara en gång när elementet blir synligt
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -113,7 +116,4 @@ document.addEventListener('DOMContentLoaded', function() {
         slides[currentSlide].classList.add('active');
       });
 
-      AOS.init({
-        duration: 1200, // Animationens varaktighet i ms
-        once: true      // Animationen sker bara en gång när elementet blir synligt
-      });
+
