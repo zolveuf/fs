@@ -297,6 +297,21 @@
           align-items: flex-end;
         }
       }
-      
+           /* ==========================================================================
+         CTA Section
+         ========================================================================== */
+         .call__to__action {
+          height: 40vw;
+          padding: var(--spacing-xl);
+          text-align: center;
+          background-color: var(--background-color-2);
+          align-content: center;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+         }  
+         
+         .call__to__action h1 {
+          font-size: 4rem;
+         }
 
-      

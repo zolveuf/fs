@@ -93,6 +93,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
+
+
       // Slider Functionality
       const slides = document.querySelectorAll('.slider__slide');
       let currentSlide = 0;
