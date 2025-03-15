@@ -6,7 +6,7 @@
     --primary-color: #003366;       /* Main accent for buttons, links, etc. */
     --secondary-color: #000292;     /* Secondary accent for highlights */
     --background-color: #FFFFFF;    /* Default page background */
-    --background-color-2: #f1f1f1;    /* Alternative background */
+    --background-color-2: #fafafa;    /* Alternative background */
     --text-color: #333333;          /* Primary text color */
     --muted-text-color: #777777;    /* Subdued text color */
   
@@ -200,12 +200,37 @@
     align-items: center;
     position: relative; /* For dropdown positioning */
   }
-  
+
   .navbar__links a {
     text-decoration: none;
     color: #fff;
     font-weight: var(--font-weight-regular);
     transition: color 0.3s ease;
+  }
+
+  .navbar__links a::after {
+    /* Underline effect on hover */
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+
+  .navbar.bg-white .navbar__links a::after {
+    background-color: #000;
+  }
+
+  
+
+  
+
+
+  .navbar__links a:hover::after {
+    width: 100%;
   }
   
   /* Hamburger Toggle for Mobile */
@@ -505,93 +530,122 @@
   /* ==========================================================================
      Footer Section
      ========================================================================== */
-  .footer {
-    background-color: #000;
-    color: #fff;
-    font-family: var(--font-family-base);
-    padding-top: calc(var(--spacing-xl) + 3rem);
+/* Footer Styles */
+footer {
+  background-color: var(--background-color);
+  padding: var(--spacing-xl) var(--spacing-lg);
+  text-align: left;
+}
+
+.reviews {
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+  margin-left: var(--spacing-lg);
+}
+
+.reviews a {
+  text-decoration: underline;
+  color: var(--text-color);
+  font-weight: var(--font-weight-regular);
+}
+
+.headline {
+  font-size: var(--h1-size);
+  font-weight: var(--font-weight-bold);
+  margin: var(--spacing-lg) 0;
+  margin-left: var(--spacing-lg);
+  margin-bottom: 5rem;
+}
+
+.footer-content {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+}
+
+.footer-column {
+  margin: var(--spacing-md);
+}
+
+.footer-column h3 {
+  font-size: var(--h5-size);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer-column a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-line {
+  width: 90%;
+  height: 1px;
+  background-color: #555;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: var(--spacing-md);
   }
-  
-  .footer__top {  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: var(--spacing-xl);
-    padding-bottom: var(--spacing-xl);
-  }
-  
-  .footer__column {
-    flex: 1;
-    min-width: 250px;
-    margin-bottom: var(--spacing-xl);
-  }
-  
-  .footer__column h3 {
-    font-size: 1.5rem;
-    margin-bottom: var(--spacing-sm);
-    color: #fff;
-  }
-  
-  .footer__column p,
-  .footer__column li {
-    font-size: 1rem;
-    color: #ccc;
-  }
-  
-  .footer__column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer__column ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .footer__column ul li a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer__column ul li a:hover {
-    color: var(--primary-color);
-  }
-  
-  .footer__social a {
-    color: #ccc;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    transition: color 0.3s ease;
-  }
-  
-  .footer__social a:hover {
-    color: var(--primary-color);
-  }
-  
-  .footer__bottom {
-    background-color: #000;
-    padding: var(--spacing-md) 0;
+
+  .headline {
+    font-size: var(--h2-size);
+    margin: var(--spacing-md) 0;
+    margin-left: 0;
     text-align: center;
-    font-size: 0.9rem;
-    color: #ccc;
   }
-  
-  .footer__bottom p {
-    margin: 0.5rem 0;
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* Footer Responsive Adjustments */
-  @media (max-width: 768px) {
-    .footer__top {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .footer__column {
-      min-width: 100%;
-    }
+
+  .footer-column {
+    margin: var(--spacing-xs) 0;
+    text-align: center;
   }
+
+  .reviews {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer-line {
+    width: 100%;
+  }
+}
+
+.footer__bottom {
+  margin: var(--spacing-lg) 0;
+  color: #777;
+  font-size: 0.8rem;
+  padding: 5px 0;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.footer__bottom:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.footer__bottom p {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+
+
   
 /* ========================================================================== 
    Hero 2 Section
