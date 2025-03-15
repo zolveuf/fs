@@ -224,13 +224,11 @@
     background-color: #000;
   }
 
-  
 
-  
-
-
-  .navbar__links a:hover::after {
-    width: 100%;
+  @media (hover: hover) and (pointer: fine) {
+    .navbar__links a:hover::after {
+      width: 100%;
+    }
   }
   
   /* Hamburger Toggle for Mobile */
