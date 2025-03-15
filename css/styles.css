@@ -540,7 +540,7 @@ footer {
 .reviews {
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--spacing-md);
-  margin-left: var(--spacing-lg);
+  margin-left: 1.5rem;
 }
 
 .reviews a {
@@ -553,8 +553,7 @@ footer {
   font-size: var(--h1-size);
   font-weight: var(--font-weight-bold);
   margin: var(--spacing-lg) 0;
-  margin-left: var(--spacing-lg);
-  margin-bottom: 5rem;
+  margin-left: 1.5rem;
 }
 
 .footer-content {
@@ -643,6 +642,8 @@ footer {
   font-weight: 300;
   letter-spacing: 0.5px;
 }
+
+
 
 
 
@@ -803,4 +804,5 @@ footer {
       }
 
  
+      
   
