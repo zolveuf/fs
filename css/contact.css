@@ -152,6 +152,7 @@
 }
 
 .contact-form .btn i {
+  color: var(--primary-color);
   transition: all 0.3s ease;
 }
 
@@ -160,5 +161,5 @@
 }
 
 .contact-form .btn:hover i {
-  color: #ddd;
+  color: #fff;
 }

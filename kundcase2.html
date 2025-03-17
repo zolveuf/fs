@@ -6,6 +6,8 @@
   <title>Zolve UF</title>
   <!-- Link to external CSS file -->
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/service.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
 
   <!-- Preconnect for faster connection -->
@@ -31,6 +33,47 @@
   <noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </noscript>
+  <style>
+    .section-header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .column {
+        flex: 1;
+    }
+    h2, h3 {
+        font-weight: 700;
+    }
+    .quote {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    .quote-icon {
+        font-size: 2rem;
+        margin-right: 0.5rem;
+    }
+    .testimonial {
+        text-align: center;
+        font-style: italic;
+        margin-top: 1rem;
+    }
+    .client-info {
+        text-align: center;
+        margin-top: 0.5rem;
+        font-weight: 700;
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+</style>
 </head>
 <body>
   <!-- Skip to content link for keyboard users -->
@@ -54,7 +97,7 @@
             <li><a href="ux-design.html">UX-design</a></li>
           </ul>
         </li>
-        <li><a href="projekt.html">Kunduppdrag</a></li>
+        <li><a href="projekt.html">Kundcase</a></li>
         <li><a href="om-oss.html">Om oss</a></li>
       </ul>
       <a href="contact.html" class="hero__cta">KONTAKTA</a>
@@ -70,128 +113,88 @@
   </header>
 
 <!-- Hero Section -->
-<section class="hero-2">
-  <div class="hero-2-overlay"></div>
-  <div class="container">
-    <h1>Kontakta oss</h1>
-    <p>Vi finns här för att hjälpa – hör av dig så återkommer vi snarast.</p>
+<section class="hero lazy-bg" data-bg-url="../utforska-img-4.jpg" role="region" aria-label="Hero Section">
+  <div class="hero__2__content">
+    <p data-aos="fade-down"
+       data-aos-duration="1000">
+      TJÄNSTER
+    </p>
+    <h1 data-aos="fade-down" data-aos-duration="500">SEO</h1>
   </div>
 </section>
 
-<main class="main-content">
-    <div class="container--wide">
-      <!-- Asymmetrisk layout: text och bild -->
-      <section class="asym-layout">
-        <div class="asym-layout__text">
-          <h2 class="asym-layout__title">Innovation utan gränser</h2>
-          <p class="asym-layout__desc">
-            Vi utmanade normen genom att bryta den traditionella layouten. Med en mix av oväntade placeringar och dynamiska element skapade vi en digital upplevelse som överraskar från första ögonkastet.
-          </p>
-        </div>
-        <div class="asym-layout__image">
-          <img src="Aurorastäd-Computer(2).jpg" alt="Asymmetrisk design">
-        </div>
-      </section>
 
-      <!-- Osymmetrisk checklista med diagonal twist -->
-      <section class="asym-checklist">
-        <h2 class="asym-checklist__title">Våra Genombrott</h2>
-        <ul class="asym-checklist__list">
-          <li class="asym-checklist__item">Flytande element & oväntade placeringar</li>
-          <li class="asym-checklist__item">Diagonala snitt och asymmetriska former</li>
-          <li class="asym-checklist__item">Mix av typsnitt & storlekar</li>
-          <li class="asym-checklist__item">Subtila animationer som väcker liv</li>
-        </ul>
-      </section>
-
-      <!-- Asymmetriskt bildgalleri -->
-      <section class="asym-gallery">
-        <h2 class="asym-gallery__title">Visuella Experiment</h2>
-        <div class="asym-gallery__grid">
-          <figure class="asym-gallery__item asym-gallery__item--large">
-            <img src="Aurorastäd-Computer(2).jpg" alt="Experiment 1" class="asym-gallery__img">
-            <figcaption class="asym-gallery__caption">Experiment 1</figcaption>
-          </figure>
-          <figure class="asym-gallery__item asym-gallery__item--small">
-            <img src="Aurorastäd-Computer(2).jpg" alt="Experiment 2" class="asym-gallery__img">
-            <figcaption class="asym-gallery__caption">Experiment 2</figcaption>
-          </figure>
-          <figure class="asym-gallery__item asym-gallery__item--medium">
-            <img src="Aurorastäd-Computer(2).jpg" alt="Experiment 3" class="asym-gallery__img">
-            <figcaption class="asym-gallery__caption">Experiment 3</figcaption>
-          </figure>
-        </div>
-      </section>
+<main>
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Best Sailing Experience<br>in Hvar</h1>
+      <p class="hero-subtitle">Discover the Adriatic coast with our premium sailing tours and private charters</p>
+      <a href="#" class="btn btn-cta">Explore Tours</a>
     </div>
-  </main>
+  </section>
+
+  <div class="container">
+    <div class="image-grid">
+      <img src="IMG_9285.JPG" alt="Tour">
+      <img src="IMG_9285.JPG" alt="Tour">
+      <img src="IMG_9285.JPG" alt="Tour">
+    </div>
+
+    <div class="content-container">
+      <div class="left-column">
+        <h2>Why Choose Us</h2>
+        <p>20+ years of sailing experience...</p>
+      </div>
+      
+      <div class="right-column">
+        <div class="card">
+          <img src="IMG_9285.JPG" alt="Tour">
+          <h3>Group Tours</h3>
+          <p>Join our daily group adventures...</p>
+          <a href="#" class="btn">Learn More <i class="arrow-icon"></i></a>
+        </div>
+        <!-- Add more cards -->
+      </div>
+    </div>
+  </div>
+</main>
   
 
 
-  <!-- Footer Section -->
-  <footer class="footer" role="contentinfo" aria-label="Footer">
-    <div class="footer__top container">
-      <!-- Om Zolve UF -->
-      <div class="footer__column footer__about">
-        <h3>Om Zolve UF</h3>
-        <p>
-          Vi är ett ungt och dynamiskt team som erbjuder moderna digitala lösningar med kreativitet och precision. Vi brinner för att förvandla idéer till verklighet.
-        </p>
-      </div>
+<footer class="container">
 
-      <!-- Tjänster -->
-      <div class="footer__column footer__services">
-        <h3>Tjänster</h3>
-        <ul>
-          <li><a href="webbdesign.html">Webbdesign</a></li>
-          <li><a href="seo.html">SEO-optimering</a></li>
-          <li><a href="ux-design.html">UX-design</a></li>
-        </ul>
+ 
+  <div class="footer-line"></div>
+  <div class="footer-content">
+      <div class="footer-column">
+          <h3>ZOLVE UF</h3>
+          <p>341 40, Ljungby</p>
+          <p><a href="mailto:zolveuf@gmail.co">zolveuf@gmail.com</a></p>
       </div>
-
-      <!-- Resurser -->
-      <div class="footer__column footer__resources">
-        <h3>Resurser</h3>
-        <ul>
-          <li><a href="blogg.html">Blogg</a></li>
-          <li><a href="contact.html">Support</a></li>
-          <li><a href="villkor.html">Allmänna villkor</a></li>
-        </ul>
+      <div class="footer-column">
+          <h3>TJÄNSTER</h3>
+          <a href="webbdesign.html">Webbdesign</a><br>
+          <a href="seo.html">SEO</a><br>
+          <a href="ux-design.html">UX-design</a>
       </div>
-
-      <!-- Kontakt & Socialt -->
-      <div class="footer__column footer__contact">
-        <h3>Kontakt</h3>
-        <ul>
-          <li>
-            <i class="fa-solid fa-phone" aria-hidden="true"></i> +46 76 808 42 64
-          </li>
-          <li>
-            <i class="fa-solid fa-envelope" aria-hidden="true"></i> zolveuf@gmail.com
-          </li>
-          <li>
-            <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Ljungby, Sverige
-          </li>
-        </ul>
-        <div class="footer__social">
-          <a href="#" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a href="#" aria-label="Instagram">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-          </a>
-        </div>
+      <div class="footer-column">
+          <h3>INFORMATION</h3>
+          <a href="contact.html">Kontakta oss</a><br>
+          <a href="villkor.html">Allmänna villkor</a><br>
       </div>
-    </div>
-
-    <!-- Bottenrad -->
-    <div class="footer__bottom">
-      <div class="container">
-        <p>&copy; 2025 Zolve UF. All rights reserved.</p>
-        <p>Made by Zolve UF</p>
+      <div class="footer-column">
+          <h3>SOCIALA MEDIER</h3>
+          <a href="https://www.instagram.com/zolveuf/">Instagram</a><br>
       </div>
-    </div>
-  </footer>
-
+  </div>
+</footer>
+<!-- Bottenrad -->
+<!-- Bottenrad -->
+<div class="footer__bottom">
+<div class="container">
+    <p>&copy; 2025 Zolve UF. Made by Zolve UF</p>
+</div>
+</div>
   <!-- Combined JavaScript for interactivity and accessibility -->
   <script src="script.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
