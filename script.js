@@ -44,10 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
 
-
-
-
-
     // Navbar Scroll Behavior for Desktop and Mobile
     let prevScrollPos = window.pageYOffset;
     const scrollThreshold = 100; // Adjust this threshold as needed
