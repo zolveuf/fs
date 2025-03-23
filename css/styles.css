@@ -791,7 +791,6 @@ footer {
 
 /* Hero Section */
 .hero-kundcase {
-  background: url('../images/aurora-stad-kundcase-hero-img.jpg') no-repeat center center/cover;
   height: 100vh;
   color: #fff;
   padding: 5rem 0;
@@ -799,6 +798,10 @@ footer {
   align-items: center;
   justify-content: flex-start;
   overflow: hidden; /* Förhindrar att innehållet sticker ut */
+}
+
+.hero-kundcase-josco {
+  background: url('../images/kundcase-hero-img-josco.jpg') no-repeat center center/cover;
 }
 
 .hero-content-kundcase {
