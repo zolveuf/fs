@@ -804,6 +804,22 @@ footer {
   background: url('../images/kundcase-hero-img-josco.jpg') no-repeat center center/cover;
 }
 
+.hero-kundcase-aurora-stad {
+  background: url('../images/aurora-stad-kundcase-hero-img.jpg') no-repeat center center/cover;
+}
+
+.hero-kundcase-flexiworker {
+  background: url('../images/kundcase-hero-img-josco.jpg') no-repeat center center/cover;
+}
+
+.hero-kundcase-equalkidz {
+  background: url('../images/kundcase-hero-equalkidz.jpg') no-repeat center center/cover;
+}
+
+.hero-kundcase-your-next-automation {
+  background: url('../images/kundcase-hero-img-josco.jpg') no-repeat center center/cover;
+}
+
 .hero-content-kundcase {
   max-width: 90%; /* Anpassa maxbredden till mindre skärmar */
   margin-top: calc(var(--spacing-xl) + 3rem);
@@ -836,8 +852,7 @@ footer {
   .hero-content-kundcase {
       margin: 0 auto;
       padding: 0 var(--spacing-sm);
-      margin-top: 10rem;
-      margin-left: 1.5rem;
+      margin-top: 7rem;
       max-width: 100%; /* Ta bort eventuell extra bredd */
   }
 
