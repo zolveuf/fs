@@ -1,235 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zolve UF</title>
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/projects.css">
-  <link rel="stylesheet" href="css/service.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Zolve UF i Ljungby erbjuder professionell webbdesign för hållbara och engagerande hemsidor." />
+    <meta name="keywords" content="webbdesign, hemsidor, Zolve UF, Ljungby, Webflow, Figma, Sverige" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Zolve UF" />
+    <title>Zolve UF - Webbdesign i Ljungby</title>
 
-  <!-- Preconnect for faster connection -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Zolve UF - Webbdesign i Ljungby" />
+    <meta property="og:description" content="Vi skapar hållbara och engagerande hemsidor med fokus på webbdesign." />
+    <meta property="og:image" content="images/om-oss-img.avif" />
+    <meta property="og:url" content="https://www.zolveuf.se/webbdesign.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sv_SE" />
 
-  <!-- Preload and non-blocking load for Google Fonts -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
-  <link rel="stylesheet" 
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" 
-        media="print" 
-        onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
-  </noscript>
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zolve UF - Webbdesign i Ljungby" />
+    <meta name="twitter:description" content="Vi skapar hållbara och engagerande hemsidor med fokus på webbdesign." />
+    <meta name="twitter:image" content="https://www.zolveuf.se/images/om-oss-img.avif" />
 
-  <!-- Preload and non-blocking load for Font Awesome -->
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-        media="print" 
-        onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </noscript>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.zolveuf.se/webbdesign.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/service.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
+    <!-- Preconnect for faster connection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload and non-blocking load for Google Fonts -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" />
+    <link rel="stylesheet" 
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" 
+          media="print" 
+          onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" />
+    </noscript>
+
+    <!-- Preload and non-blocking load for Font Awesome -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          media="print" 
+          onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </noscript>
 </head>
+
 <body>
-  <!-- Skip to content link for keyboard users -->
+    <!-- Skip to content link -->
 
-  <header role="banner">
-    <nav class="navbar" aria-label="Main Navigation">
-      <div class="navbar__logo"><a href="index.html">Zolve UF</a></div>
-      <ul class="navbar__links" id="navbar-links">
-        <li class="navbar__dropdown">
-          <a href="#"
-             class="dropdown__toggle"
-             aria-haspopup="true" 
-             aria-expanded="false" 
-             aria-controls="dropdown-menu-tjanster">
-            Tjänster
-            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-          </a>
-          <ul class="dropdown__menu" id="dropdown-menu-tjanster">
-            <li><a href="webbdesign.html">Webbdesign</a></li>
-            <li><a href="seo.html">SEO-optimering</a></li>
-            <li><a href="ux-design.html">UX-design</a></li>
-          </ul>
-        </li>
-        <li><a href="projekt.html">Kundcase</a></li>
-        <li><a href="om-oss.html">Om oss</a></li>
-      </ul>
-      <a href="contact.html" class="hero__cta">KONTAKTA</a>
-      <div class="navbar__toggle" role="button" tabindex="0"
-           aria-label="Toggle Navigation Menu" 
-           aria-expanded="false"
-           aria-controls="navbar-links">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
+    <header role="banner">
+        <nav class="navbar" aria-label="Huvudnavigering" role="navigation">
+            <div class="navbar__logo">
+                <a href="index.html">Zolve UF</a>
+            </div>
+            <ul class="navbar__links" id="navbar-links">
+                <li class="navbar__dropdown">
+                    <a href="#"
+                       class="dropdown__toggle"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-controls="dropdown-menu-tjanster">
+                        Tjänster
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown__menu" id="dropdown-menu-tjanster">
+                        <li><a href="webbdesign.html">Webbdesign</a></li>
+                        <li><a href="seo.html">SEO-optimering</a></li>
+                        <li><a href="ux-design.html">UX-design</a></li>
+                    </ul>
+                </li>
+                <li><a href="projekt.html">Kundcase</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+            </ul>
+            <a href="contact.html" class="hero__cta">KONTAKTA</a>
+            <div class="navbar__toggle" 
+                 role="button" 
+                 tabindex="0"
+                 aria-label="Växla navigeringsmeny"
+                 aria-expanded="false"
+                 aria-controls="navbar-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-<!-- Hero Section -->
-<section class="hero lazy-bg" data-bg-url="../utforska-img-4.jpg" role="region" aria-label="Hero Section">
-  <div class="hero__2__content">
-    <p data-aos="fade-down" data-aos-duration="1000">
-      TJÄNSTER
-    </p>
-    <h1 data-aos="fade-down" data-aos-duration="500">Webbdesign</h1>
-  </div>
-</section>
-
-
-<main>
-    <section class="features" data-aos="fade-up" data-aos-duration="1000">
-        <div class="container features__container">
-          <h2 class="features__title">Långsiktiga och hållbara lösningar</h2>
-          <p>
-            För oss handlar det inte bara om att skapa hemsidor som ser bra ut, utan som också håller i längden. Vi lägger stor vikt vid kvalitet, säkerhet och stabilitet för att leverera lösningar vi kan vara stolta över.
-            Genom smarta arbetsprocesser och ett engagerat team utvecklar vi professionella webbplatser anpassade efter varje kunds unika behov. Vi arbetar agilt, testar och förbättrar vår kod kontinuerligt samt håller oss uppdaterade med de senaste teknikerna inom webbutveckling.
-
-
-          </p>
-          <div class="features__grid">
-            <div class="feature__item">
-              <h3 class="feature__title">Från idé till färdig hemsida</h3>
-              <p class="feature__text">
-                På Zolve UF handlar webbutveckling om mer än bara design – det är konsten att skapa en sömlös och engagerande upplevelse för användaren. Vi använder Webflow och Figma för att snabbt ta fram designskisser, vilket gör det enkelt för våra kunder att visualisera sin webbplats och ge feedback i realtid.
-
-              </p>
-            </div>
-            <div class="feature">
-              <h3 class="feature__title">Vi arbetar med:</h3>
-                <ul>
-                  <p><i class="fas fa-check"></i> HTML</p>
-                  <p><i class="fas fa-check"></i> CSS</p>
-                  <p><i class="fas fa-check"></i> Javascript</p>
-                  <p><i class="fas fa-check"></i> Webflow</p>
-                  <p><i class="fas fa-check"></i> Figma</p>
-                </ul>
-            </div>
-          </div>
-          <h2 class="features__title">Synlighet på Google som gör skillnad
-          </h2>
-          <p>
-            En webbplats som laddar snabbt, är responsiv och tekniskt optimerad har stor påverkan på hur den rankas av Google och andra sökmotorer. En långsam eller tekniskt bristfällig webbplats riskerar att hamna långt ner i sökresultaten, vilket gör det svårare för potentiella kunder att hitta företaget. På Zolve UF ser vi därför till att varje webbplats vi skapar uppfyller Googles krav på prestanda, mobilanpassning och sökmotoroptimering – så att våra kunder alltid får bästa möjliga synlighet online.
-          </p>
-          <div class="features__grid">
-            <div class="feature__item">
-              <h3 class="feature__title">Hosting och support</h3>
-              <p class="feature__text">
-                Vi sköter domänregistrering, hosting och säker drift, så att din webbplats alltid är snabb och trygg. Med ständiga uppdateringar, säkerhetskontroller och prestandaoptimering ser vi till att din sida fungerar felfritt. Behöver du teknisk support eller vill göra förändringar? Vi finns här för att hjälpa dig – snabbt och smidigt.
-              </p>
-            </div>
-            <div class="feature__item">
-              <h3 class="feature__title">Ett våra webbutvecklings projekt</h3>
-              <article class="customer-case">
-                <a href="kundcase-josko-travels.html" class="customer-case__link">
-                  <div class="customer-case__image-wrapper">
-                    <img src="images/kundcase-josco-img.jpg" alt="Kundcase 1" class="customer-case__image">
-                  </div>
-                  <div class="customer-case__content">
-                    <h2 class="customer-case__title">Josco Travels AB</h2>
-                    <p class="customer-case__description">Den lilla men personliga resebyrån som ordnar resor till världens alla hörn. </p>
-                  </div>
-                </a>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-    
-      <!-- FAQ Section med dropdown -->
-      <section class="faq">
-        <div class="container faq__container">
-          <h2 class="faq__title">Vanliga Frågor</h2>
-          <div class="faq__list">
-            <div class="faq__item" data-aos="fade-up" data-aos-duration="1000">
-              <button class="faq__question"><h4>Hur lång tid tar det att bygga en hemsida?</h4></button>
-              <div class="faq__answer">
-                <p>
-                  Det beror på projektets omfattning, men vi levererar oftast inom 1–3 veckor.                </p>
-              </div>
-            </div>
-            <div class="faq__item" data-aos="fade-up" data-aos-duration="1200">
-              <button class="faq__question"><h4>Kan jag själv uppdatera min hemsida efter lansering?</h4></button>
-              <div class="faq__answer">
-                <p>
-                  Om vi bygger din webbplats i Webflow kan vi gå igenom en enkel kurs så att du själv kan uppdatera innehåll smidigt. Om sidan är kodad i HTML, CSS och JavaScript blir det mer avancerat, men vi finns alltid här för att hjälpa dig med uppdateringar.              </div>
-            </div>
-            <div class="faq__item" data-aos="fade-up" data-aos-duration="1400">
-              <button class="faq__question"><h4>Vad händer om något slutar fungera?</h4></button>
-              <div class="faq__answer">
-                <p>
-                  Du kan känna dig trygg – vår support är alltid redo att snabbt lösa eventuella problem och säkerställa att din webbplats fungerar felfritt.                </p>
-              </div>
-            </div>
-            <div class="faq__item" data-aos="fade-up" data-aos-duration="1600">
-              <button class="faq__question"><h4>Vad ingår i ert SEO-arbete?</h4></button>
-              <div class="faq__answer">
-                <p>
-                  Vi optimerar hastighet, mobilanpassning och struktur så att din webbplats rankas bättre på Google, vilket i sin tur leder till flera kunder.              </p>
-              </div>
-            </div>
-            <!-- Fler FAQ-poster vid behov -->
-          </div>
-        </div>
-      </section>
-
-      <section class="articles" role="region" aria-label="Artiklar">
-        <div class="container">
-          <h2 class="articles__title">Vill du veta mer om hur vi kan hjälpa dig?</h2>
-          </div>
-          <div class="articles__button">
-            <a href="contact.html" class="btn">Kontakta oss här</a>
-          </div>
+    <!-- Hero Section -->
+    <section class="hero webbdesign-hero" 
+             data-bg-url="../images/webdesign-hero-img.webp" 
+             role="region" 
+             aria-label="Huvudsektion" 
+             >
+        <div class="hero__2__content">
+            <p data-aos="fade-down" data-aos-duration="1000">TJÄNSTER</p>
+            <h1 data-aos="fade-down" data-aos-duration="500">Webbdesign</h1>
         </div>
     </section>
 
-</main>
-  
+    <main id="main-content">
+        <section class="features" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container features__container">
+                <h2 class="features__title">Långsiktiga och hållbara lösningar</h2>
+                <p lang="sv">
+                    För oss handlar det inte bara om att skapa hemsidor som ser bra ut, utan som också håller i längden. Vi lägger stor vikt vid kvalitet, säkerhet och stabilitet för att leverera lösningar vi kan vara stolta över. Genom smarta arbetsprocesser och ett engagerat team utvecklar vi professionella webbplatser anpassade efter varje kunds unika behov. Vi arbetar agilt, testar och förbättrar vår kod kontinuerligt samt håller oss uppdaterade med de senaste teknikerna inom webbutveckling.
+                </p>
+                <div class="features__grid">
+                    <div class="feature__item" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="feature__title">Från idé till färdig hemsida</h3>
+                        <p class="feature__text" lang="sv">
+                            På Zolve UF handlar webbutveckling om mer än bara design – det är konsten att skapa en sömlös och engagerande upplevelse för användaren. Vi använder Webflow och Figma för att snabbt ta fram designskisser, vilket gör det enkelt för våra kunder att visualisera sin webbplats och ge feedback i realtid.
+                        </p>
+                    </div>
+                    <div class="feature" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="feature__title">Vi arbetar med:</h3>
+                        <ul style="list-style: none;">
+                            <li><i class="fas fa-check"></i> HTML</li>
+                            <li><i class="fas fa-check"></i> CSS</li>
+                            <li><i class="fas fa-check"></i> Javascript</li>
+                            <li><i class="fas fa-check"></i> Webflow</li>
+                            <li><i class="fas fa-check"></i> Figma</li>
+                        </ul>
+                    </div>
+                </div>
+                <h2 data-aos="fade-up" data-aos-duration="1000" class="features__title">Synlighet på Google som gör skillnad</h2>
+                <p data-aos="fade-up" data-aos-duration="1000" lang="sv">
+                    En webbplats som laddar snabbt, är responsiv och tekniskt optimerad har stor påverkan på hur den rankas av Google och andra sökmotorer. En långsam eller tekniskt bristfällig webbplats riskerar att hamna långt ner i sökresultaten, vilket gör det svårare för potentiella kunder att hitta företaget. På Zolve UF ser vi därför till att varje webbplats vi skapar uppfyller Googles krav på prestanda, mobilanpassning och sökmotoroptimering – så att våra kunder alltid får bästa möjliga synlighet online.
+                </p>
+                <div class="features__grid">
+                    <div class="feature__item" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="feature__title">Hosting och support</h3>
+                        <p class="feature__text" lang="sv">
+                            Vi sköter domänregistrering, hosting och säker drift, så att din webbplats alltid är snabb och trygg. Med ständiga uppdateringar, säkerhetskontroller och prestandaoptimering ser vi till att din sida fungerar felfritt. Behöver du teknisk support eller vill göra förändringar? Vi finns här för att hjälpa dig – snabbt och smidigt.
+                        </p>
+                    </div>
+                    <div class="feature__item" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="feature__title">Ett av våra webbutvecklingsprojekt</h3>
+                        <article class="customer-case">
+                            <a href="kundcase-josko-travels.html" class="customer-case__link">
+                                <div class="customer-case__image-wrapper">
+                                    <img src="images/kundcase-josco-img.jpg" 
+                                         alt="Josco Travels AB webbplats, designad av Zolve UF" 
+                                         class="customer-case__image" 
+                                         loading="lazy" />
+                                </div>
+                                <div class="customer-case__content" data-aos="fade-up" data-aos-duration="1000">
+                                    <h2 class="customer-case__title">Josco Travels AB</h2>
+                                    <p class="customer-case__description" lang="sv">
+                                        Den lilla men personliga resebyrån som ordnar resor till världens alla hörn.
+                                    </p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- FAQ Section med dropdown -->
+        <section class="faq" role="region" aria-label="Vanliga frågor">
+            <div class="container faq__container">
+                <h2 class="faq__title">Vanliga Frågor</h2>
+                <div class="faq__list">
+                    <div class="faq__item" data-aos="fade-up" data-aos-duration="1000">
+                        <button class="faq__question" 
+                                aria-expanded="false" 
+                                aria-controls="faq-answer-1">
+                            <h4>Hur lång tid tar det att bygga en hemsida?</h4>
+                        </button>
+                        <div class="faq__answer" id="faq-answer-1">
+                            <p lang="sv">
+                                Det beror på projektets omfattning, men vi levererar oftast inom 1–3 veckor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item" data-aos="fade-up" data-aos-duration="1200">
+                        <button class="faq__question" 
+                                aria-expanded="false" 
+                                aria-controls="faq-answer-2">
+                            <h4>Kan jag själv uppdatera min hemsida efter lansering?</h4>
+                        </button>
+                        <div class="faq__answer" id="faq-answer-2">
+                            <p lang="sv">
+                                Om vi bygger din webbplats i Webflow kan vi gå igenom en enkel kurs så att du själv kan uppdatera innehåll smidigt. Om sidan är kodad i HTML, CSS och JavaScript blir det mer avancerat, men vi finns alltid här för att hjälpa dig med uppdateringar.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item" data-aos="fade-up" data-aos-duration="1400">
+                        <button class="faq__question" 
+                                aria-expanded="false" 
+                                aria-controls="faq-answer-3">
+                            <h4>Vad händer om något slutar fungera?</h4>
+                        </button>
+                        <div class="faq__answer" id="faq-answer-3">
+                            <p lang="sv">
+                                Du kan känna dig trygg – vår support är alltid redo att snabbt lösa eventuella problem och säkerställa att din webbplats fungerar felfritt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item" data-aos="fade-up" data-aos-duration="1600">
+                        <button class="faq__question" 
+                                aria-expanded="false" 
+                                aria-controls="faq-answer-4">
+                            <h4>Vad ingår i ert SEO-arbete?</h4>
+                        </button>
+                        <div class="faq__answer" id="faq-answer-4">
+                            <p lang="sv">
+                                Vi optimerar hastighet, mobilanpassning och struktur så att din webbplats rankas bättre på Google, vilket i sin tur leder till flera kunder.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<footer class="container">
+        <section class="articles" role="region" aria-label="Artiklar" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <h2 class="articles__title">Vill du veta mer om hur vi kan hjälpa dig?</h2>
+                <div class="articles__button">
+                    <a href="contact.html" class="btn">Kontakta oss här</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
- 
-  <div class="footer-line"></div>
-  <div class="footer-content">
-      <div class="footer-column">
-          <h3>ZOLVE UF</h3>
-          <p>341 40, Ljungby</p>
-          <p><a href="mailto:zolveuf@gmail.co">zolveuf@gmail.com</a></p>
-      </div>
-      <div class="footer-column">
-          <h3>TJÄNSTER</h3>
-          <a href="webbdesign.html">Webbdesign</a><br>
-          <a href="seo.html">SEO</a><br>
-          <a href="ux-design.html">UX-design</a>
-      </div>
-      <div class="footer-column">
-          <h3>INFORMATION</h3>
-          <a href="contact.html">Kontakta oss</a><br>
-          <a href="villkor.html">Allmänna villkor</a><br>
-      </div>
-      <div class="footer-column">
-          <h3>SOCIALA MEDIER</h3>
-          <a href="https://www.instagram.com/zolveuf/">Instagram</a><br>
-      </div>
-  </div>
-</footer>
-<!-- Bottenrad -->
-<!-- Bottenrad -->
-<div class="footer__bottom">
-<div class="container">
-    <p>&copy; 2025 Zolve UF. Made by Zolve UF</p>
-</div>
-</div>
-  <!-- Combined JavaScript for interactivity and accessibility -->
-  <script src="script.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <footer class="container" role="contentinfo">
+        <div class="footer-line"></div>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>ZOLVE UF</h3>
+                <p>341 40, Ljungby</p>
+                <p><a href="mailto:zolveuf@gmail.com">zolveuf@gmail.com</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>TJÄNSTER</h3>
+                <a href="webbdesign.html">Webbdesign</a><br />
+                <a href="seo.html">SEO</a><br />
+                <a href="ux-design.html">UX-design</a>
+            </div>
+            <div class="footer-column">
+                <h3>INFORMATION</h3>
+                <a href="contact.html">Kontakta oss</a><br />
+                <a href="villkor.html">Allmänna villkor</a><br />
+            </div>
+            <div class="footer-column">
+                <h3>SOCIALA MEDIER</h3>
+                <a href="https://www.instagram.com/zolveuf/">Instagram</a><br />
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+              <p>© 2025 Zolve UF. Made by Zolve UF</p>
+            </div>
+        </div>
 
+        <!-- Schema Markup for Webbdesign Service -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Webbdesign",
+            "provider": {
+                "@type": "Organization",
+                "name": "Zolve UF",
+                "url": "https://www.zolveuf.se",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "341 40",
+                    "addressLocality": "Ljungby",
+                    "addressCountry": "SE"
+                },
+                "email": "zolveuf@gmail.com"
+            },
+            "description": "Professionell webbdesign med fokus på hållbara och engagerande hemsidor."
+        }
+        </script>
+    </footer>
+
+    <!-- Combined JavaScript for interactivity and accessibility -->
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

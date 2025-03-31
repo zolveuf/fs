@@ -1,227 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zolve UF</title>
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/projects.css">
-  <link rel="stylesheet" href="css/service.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Zolve UF i Ljungby erbjuder UX-design för intuitiva och användarvänliga digitala lösningar." />
+    <meta name="keywords" content="UX-design, användarupplevelse, Zolve UF, Ljungby, Figma, responsiv design, Sverige" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Zolve UF" />
+    <title>Zolve UF - UX-design i Ljungby</title>
 
-  <!-- Preconnect for faster connection -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Zolve UF - UX-design i Ljungby" />
+    <meta property="og:description" content="Vi skapar intuitiva och användarvänliga digitala lösningar med fokus på UX-design." />
+    <meta property="og:image" content="images/om-oss-img.avif" />
+    <meta property="og:url" content="https://www.zolveuf.se/ux-design.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sv_SE" />
 
-  <!-- Preload and non-blocking load for Google Fonts -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
-  <link rel="stylesheet" 
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" 
-        media="print" 
-        onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
-  </noscript>
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zolve UF - UX-design i Ljungby" />
+    <meta name="twitter:description" content="Vi skapar intuitiva och användarvänliga digitala lösningar med fokus på UX-design." />
+    <meta name="twitter:image" content="https://www.zolveuf.se/images/om-oss-img.avif" />
 
-  <!-- Preload and non-blocking load for Font Awesome -->
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-        media="print" 
-        onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </noscript>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.zolveuf.se/ux-design.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/service.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
+    <!-- Preconnect for faster connection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload and non-blocking load for Google Fonts -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" />
+    <link rel="stylesheet" 
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" 
+          media="print" 
+          onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" />
+    </noscript>
+
+    <!-- Preload and non-blocking load for Font Awesome -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          media="print" 
+          onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </noscript>
 </head>
+
 <body>
-  <!-- Skip to content link for keyboard users -->
+    <!-- Skip to content link -->
 
-  <header role="banner">
-    <nav class="navbar" aria-label="Main Navigation">
-      <div class="navbar__logo"><a href="index.html">Zolve UF</a></div>
-      <ul class="navbar__links" id="navbar-links">
-        <li class="navbar__dropdown">
-          <a href="#"
-             class="dropdown__toggle"
-             aria-haspopup="true" 
-             aria-expanded="false" 
-             aria-controls="dropdown-menu-tjanster">
-            Tjänster
-            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-          </a>
-          <ul class="dropdown__menu" id="dropdown-menu-tjanster">
-            <li><a href="webbdesign.html">Webbdesign</a></li>
-            <li><a href="seo.html">SEO-optimering</a></li>
-            <li><a href="ux-design.html">UX-design</a></li>
-          </ul>
-        </li>
-        <li><a href="projekt.html">Kundcase</a></li>
-        <li><a href="om-oss.html">Om oss</a></li>
-      </ul>
-      <a href="contact.html" class="hero__cta">KONTAKTA</a>
-      <div class="navbar__toggle" role="button" tabindex="0"
-           aria-label="Toggle Navigation Menu" 
-           aria-expanded="false"
-           aria-controls="navbar-links">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
-
-<!-- Hero Section -->
-<section class="hero lazy-bg" data-bg-url="../utforska-img-4.jpg" role="region" aria-label="Hero Section">
-  <div class="hero__2__content">
-    <p data-aos="fade-down" data-aos-duration="1000">
-      TJÄNSTER
-    </p>
-    <h1 data-aos="fade-down" data-aos-duration="500">UX-design</h1>
-  </div>
-</section>
-
-
-<main>
-    <section class="features" data-aos="fade-up" data-aos-duration="1000">
-        <div class="container features__container">
-          <h2 class="features__title" style="text-align: left; color: #000; font-size: 1.75rem;">UX och design handlar om att skapa intuitiva och effektiva lösningar som förenklar vardagen för både människor och företag genom en genomtänkt användarupplevelse.
-          </h2>
-          <div class="features__grid">
-            <div class="feature__item">
-              <h3 class="feature__title">Vad är UX och design?
-              </h3>
-              <p class="feature__text">
-                UX och design handlar om att skapa smidiga, intuitiva och visuellt tilltalande lösningar som förbättrar användarupplevelsen. Genom att fokusera på användarens behov och beteenden gör vi digitala produkter mer effektiva, lättanvända och engagerande.
-              </p>
+    <header role="banner">
+        <nav class="navbar" aria-label="Huvudnavigering" role="navigation">
+            <div class="navbar__logo">
+                <a href="index.html">Zolve UF</a>
             </div>
-            <div class="feature">
-              <h3 class="feature__title">Vi hjälper er med:</h3>
-                <ul>
-                  <p><i class="fas fa-check"></i> Användaranalys – Vi undersöker målgruppen, deras behov och beteenden för att skapa en skräddarsydd upplevelse.</p>
-                  <p><i class="fas fa-check"></i> Wireframes & prototyper – Vi skapar skisser och klickbara prototyper i Figma för att visualisera designen och testa tidigt.</p>
-                  <p><i class="fas fa-check"></i> Interaktionsdesign – Vi ser till att knappar, formulär och andra element är smidiga och responsiva för en bättre användarupplevelse.</p>
-                  <p><i class="fas fa-check"></i>  Responsivitet & tillgänglighet – Vi säkerställer att webbplatsen fungerar perfekt på alla enheter och är anpassad för alla användare.</p>
-                </ul>
+            <ul class="navbar__links" id="navbar-links">
+                <li class="navbar__dropdown">
+                    <a href="#"
+                       class="dropdown__toggle"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-controls="dropdown-menu-tjanster">
+                        Tjänster
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown__menu" id="dropdown-menu-tjanster">
+                        <li><a href="webbdesign.html">Webbdesign</a></li>
+                        <li><a href="seo.html">SEO-optimering</a></li>
+                        <li><a href="ux-design.html">UX-design</a></li>
+                    </ul>
+                </li>
+                <li><a href="projekt.html">Kundcase</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+            </ul>
+            <a href="contact.html" class="hero__cta">KONTAKTA</a>
+            <div class="navbar__toggle" 
+                 role="button" 
+                 tabindex="0"
+                 aria-label="Växla navigeringsmeny"
+                 aria-expanded="false"
+                 aria-controls="navbar-links">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-          </div>
-          <h2 class="features__title">Fokus på användaren</h2>
-<p>För att designa digitala tjänster och användarupplevelser som människor uppskattar krävs en djup förståelse för hur de tänker, känner och agerar. Genom att analysera användarnas behov och beteenden kan vi skapa lösningar som inte bara är visuellt tilltalande utan också funktionella och värdefulla i deras vardag.
+        </nav>
+    </header>
 
-
-
-
-
-
-
-</p>          <div class="features__grid">
-            <div class="feature__item">
-              <h3 class="feature__title">Design</h3>
-              <p class="feature__text">
-                När grunden är lagd omsätts konceptet i en genomtänkt visuell design. Vi skapar en estetisk och funktionell helhet där färger, typografi och bildspråk samverkar för att guida användaren intuitivt genom webbplatsen. En stark digital identitet är avgörande – vi ser till att din webbplats speglar ditt varumärke, skapar igenkänning och gör att du står ut från konkurrenterna. Målet är en engagerande upplevelse som inte bara ser bra ut, utan också driver resultat.
-
-              </p>
-            </div>
-            <div class="feature__item">
-              <h3 class="feature__title"></h3>
-                    <img data-aos="fade-right" style="width: 80%;" src="images/Color-Wheel-2.avif" alt="Kundcase 1" class="customer-case__image">
-            </div>
-          </div>
-        </div>
-      </section>
-    
-    
-      <!-- FAQ Section med dropdown -->
-      <section class="faq">
-        <div class="container faq__container">
-          <h2 class="faq__title">Vanliga Frågor</h2>
-          <div class="faq__list">
-            <div class="faq__item" data-aos="fade-up" data-aos-duration="1000">
-              <button class="faq__question"><h4>Vad ingår i er UX-designprocess?</h4></button>
-              <div class="faq__answer">
-                <p>
-                  Vi börjar med att analysera användarnas behov och beteenden, skapar en tydlig struktur och designar gränssnitt som är både snygga och funktionella. Vi testar och justerar löpande för att säkerställa en optimal upplevelse.
-
-
-                </p>
-              </div>
-            </div>
-            <div class="faq__item" data-aos="fade-up" data-aos-duration="1200">
-              <button class="faq__question"><h4>Hur anpassar ni designen till mitt varumärke?</h4></button>
-              <div class="faq__answer">
-                <p>
-                  Vi utgår från din visuella identitet, dina värderingar och målgruppens förväntningar för att skapa en design som känns unik och speglar ditt varumärke.
-
-
-                </div>
-            </div>
-            <div class="faq__item" data-aos="fade-up" data-aos-duration="1400">
-              <button class="faq__question"><h4>Kan jag vara med och påverka designen?</h4></button>
-              <div class="faq__answer">
-                <p>
-                  Absolut! Vi arbetar i nära dialog med dig under hela processen och använder verktyg som Figma för att snabbt visualisera idéer och göra justeringar utifrån dina önskemål.
-
-
-                </p>
-              </div>
-            </div>
-            <!-- Fler FAQ-poster vid behov -->
-          </div>
-        </div>
-      </section>
-
-      <section class="articles" role="region" aria-label="Artiklar">
-        <div class="container">
-          <h2 class="articles__title">Vill du veta mer om hur vi kan hjälpa dig?</h2>
-          </div>
-          <div class="articles__button">
-            <a href="contact.html" class="btn">Kontakta oss här</a>
-          </div>
+    <!-- Hero Section -->
+    <section class="hero ux-design-hero" 
+             data-bg-url="../utforska-img-4.jpg" 
+             role="region" 
+             aria-label="Huvudsektion" 
+             data-aos="fade-in">
+        <div class="hero__2__content">
+            <p data-aos="fade-down" data-aos-duration="1000">TJÄNSTER</p>
+            <h1 data-aos="fade-down" data-aos-duration="500">UX-design</h1>
         </div>
     </section>
 
-</main>
-  
+    <main id="main-content">
+        <section class="features" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container features__container">
+                <h2 class="features__title" style="text-align: left; color: #000; font-size: 1.75rem;">UX och design handlar om att skapa intuitiva och effektiva lösningar som förenklar vardagen för både människor och företag genom en genomtänkt användarupplevelse.</h2>
+                <div class="features__grid">
+                    <div class="feature__item" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="feature__title">Vad är UX och design?</h3>
+                        <p class="feature__text" lang="sv">
+                            UX och design handlar om att skapa smidiga, intuitiva och visuellt tilltalande lösningar som förbättrar användarupplevelsen. Genom att fokusera på användarens behov och beteenden gör vi digitala produkter mer effektiva, lättanvända och engagerande.
+                        </p>
+                    </div>
+                    <div class="feature" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="feature__title">Vi hjälper er med:</h3>
+                        <ul style="list-style: none;">
+                            <li><i class="fas fa-check"></i> Användaranalys – Vi undersöker målgruppen, deras behov och beteenden för att skapa en skräddarsydd upplevelse.</li>
+                            <li><i class="fas fa-check"></i> Wireframes & prototyper – Vi skapar skisser och klickbara prototyper i Figma för att visualisera designen och testa tidigt.</li>
+                            <li><i class="fas fa-check"></i> Interaktionsdesign – Vi ser till att knappar, formulär och andra element är smidiga och responsiva för en bättre användarupplevelse.</li>
+                            <li><i class="fas fa-check"></i> Responsivitet & tillgänglighet – Vi säkerställer att webbplatsen fungerar perfekt på alla enheter och är anpassad för alla användare.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h2 class="features__title" data-aos="fade-up" data-aos-duration="1000">Fokus på användaren</h2>
+                <p data-aos="fade-up" data-aos-duration="1000" lang="sv">
+                    För att designa digitala tjänster och användarupplevelser som människor uppskattar krävs en djup förståelse för hur de tänker, känner och agerar. Genom att analysera användarnas behov och beteenden kan vi skapa lösningar som inte bara är visuellt tilltalande utan också funktionella och värdefulla i deras vardag.
+                </p>
+                <div class="features__grid">
+                    <div class="feature__item" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="feature__title">Design</h3>
+                        <p class="feature__text" lang="sv">
+                            När grunden är lagd omsätts konceptet i en genomtänkt visuell design. Vi skapar en estetisk och funktionell helhet där färger, typografi och bildspråk samverkar för att guida användaren intuitivt genom webbplatsen. En stark digital identitet är avgörande – vi ser till att din webbplats speglar ditt varumärke, skapar igenkänning och gör att du står ut från konkurrenterna. Målet är en engagerande upplevelse som inte bara ser bra ut, utan också driver resultat.
+                        </p>
+                    </div>
+                    <div class="feature__item" data-aos="fade-up" data-aos-duration="1000">
+                        <img data-aos="fade-right" style="width: 80%;" 
+                             src="images/Color-Wheel-2.avif" 
+                             alt="Färghjul som illustrerar visuell design inom UX" 
+                             class="customer-case__image" 
+                             loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- FAQ Section med dropdown -->
+        <section class="faq" role="region" aria-label="Vanliga frågor">
+            <div class="container faq__container">
+                <h2 class="faq__title">Vanliga Frågor</h2>
+                <div class="faq__list">
+                    <div class="faq__item" data-aos="fade-up" data-aos-duration="1000">
+                        <button class="faq__question" 
+                                aria-expanded="false" 
+                                aria-controls="faq-answer-1">
+                            <h4>Vad ingår i er UX-designprocess?</h4>
+                        </button>
+                        <div class="faq__answer" id="faq-answer-1">
+                            <p lang="sv">
+                                Vi börjar med att analysera användarnas behov och beteenden, skapar en tydlig struktur och designar gränssnitt som är både snygga och funktionella. Vi testar och justerar löpande för att säkerställa en optimal upplevelse.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item" data-aos="fade-up" data-aos-duration="1200">
+                        <button class="faq__question" 
+                                aria-expanded="false" 
+                                aria-controls="faq-answer-2">
+                            <h4>Hur anpassar ni designen till mitt varumärke?</h4>
+                        </button>
+                        <div class="faq__answer" id="faq-answer-2">
+                            <p lang="sv">
+                                Vi utgår från din visuella identitet, dina värderingar och målgruppens förväntningar för att skapa en design som känns unik och speglar ditt varumärke.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item" data-aos="fade-up" data-aos-duration="1400">
+                        <button class="faq__question" 
+                                aria-expanded="false" 
+                                aria-controls="faq-answer-3">
+                            <h4>Kan jag vara med och påverka designen?</h4>
+                        </button>
+                        <div class="faq__answer" id="faq-answer-3">
+                            <p lang="sv">
+                                Absolut! Vi arbetar i nära dialog med dig under hela processen och använder verktyg som Figma för att snabbt visualisera idéer och göra justeringar utifrån dina önskemål.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<footer class="container">
+        <section class="articles" role="region" aria-label="Artiklar" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <h2 class="articles__title">Vill du veta mer om hur vi kan hjälpa dig?</h2>
+                <div class="articles__button">
+                    <a href="contact.html" class="btn">Kontakta oss här</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
- 
-  <div class="footer-line"></div>
-  <div class="footer-content">
-      <div class="footer-column">
-          <h3>ZOLVE UF</h3>
-          <p>341 40, Ljungby</p>
-          <p><a href="mailto:zolveuf@gmail.co">zolveuf@gmail.com</a></p>
-      </div>
-      <div class="footer-column">
-          <h3>TJÄNSTER</h3>
-          <a href="webbdesign.html">Webbdesign</a><br>
-          <a href="seo.html">SEO</a><br>
-          <a href="ux-design.html">UX-design</a>
-      </div>
-      <div class="footer-column">
-          <h3>INFORMATION</h3>
-          <a href="contact.html">Kontakta oss</a><br>
-          <a href="villkor.html">Allmänna villkor</a><br>
-      </div>
-      <div class="footer-column">
-          <h3>SOCIALA MEDIER</h3>
-          <a href="https://www.instagram.com/zolveuf/">Instagram</a><br>
-      </div>
-  </div>
-</footer>
-<!-- Bottenrad -->
-<!-- Bottenrad -->
-<div class="footer__bottom">
-<div class="container">
-    <p>&copy; 2025 Zolve UF. Made by Zolve UF</p>
-</div>
-</div>
+    <footer class="container" role="contentinfo">
+        <div class="footer-line"></div>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>ZOLVE UF</h3>
+                <p>341 40, Ljungby</p>
+                <p><a href="mailto:zolveuf@gmail.com">zolveuf@gmail.com</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>TJÄNSTER</h3>
+                <a href="webbdesign.html">Webbdesign</a><br />
+                <a href="seo.html">SEO</a><br />
+                <a href="ux-design.html">UX-design</a>
+            </div>
+            <div class="footer-column">
+                <h3>INFORMATION</h3>
+                <a href="contact.html">Kontakta oss</a><br />
+                <a href="villkor.html">Allmänna villkor</a><br />
+            </div>
+            <div class="footer-column">
+                <h3>SOCIALA MEDIER</h3>
+                <a href="https://www.instagram.com/zolveuf/">Instagram</a><br />
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>© 2025 Zolve UF. Made by Zolve UF</p>
+            </div>
+        </div>
 
-  <!-- Combined JavaScript for interactivity and accessibility -->
-  <script src="script.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+        <!-- Schema Markup for UX-design Service -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "UX-design",
+            "provider": {
+                "@type": "Organization",
+                "name": "Zolve UF",
+                "url": "https://www.zolveuf.se",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "341 40",
+                    "addressLocality": "Ljungby",
+                    "addressCountry": "SE"
+                },
+                "email": "zolveuf@gmail.com"
+            },
+            "description": "Intuitiv och användarvänlig UX-design för digitala lösningar som förbättrar användarupplevelsen."
+        }
+        </script>
+    </footer>
 
+    <!-- Combined JavaScript for interactivity and accessibility -->
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

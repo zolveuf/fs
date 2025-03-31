@@ -442,8 +442,9 @@
   }
   
   .hero.lazy-bg {
-    background: url('../hero-img.jpg') no-repeat center center/cover;
+    background: url('../images/home-webbdesign-img.jpg') no-repeat center center/cover;
   }
+
   
   .hero__content {
     max-width: 700px;

@@ -459,7 +459,15 @@
     .kunder__hero {
       background-color: var(--background-color);
     }
-    
-    .hero__tjänster {
-      background: url('../hero-img.jpg') center/cover no-repeat;
+
+    .webbdesign-hero {
+      background: url(../images/webdesign-hero-img.webp) no-repeat center center/cover;
+    }
+
+    .seo-hero {
+      background: url(../images/seo-hero-img.jpg) no-repeat center center/cover;
+    }
+
+    .ux-design-hero {
+      background: url(../images/ux-design-hero.jpg) no-repeat center center/cover;
     }
