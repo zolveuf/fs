@@ -163,3 +163,7 @@
 .contact-form .btn:hover i {
   color: #fff;
 }
+
+.kontakta-oss-hero-img {
+  background-image: url(../images/kontakta-oss-hero-img.jpg);
+}

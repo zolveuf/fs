@@ -1,199 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zolve UF</title>
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/projects.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Zolve UF i Ljungby presenterar kundcase med webbdesign, SEO och UX-design för företag som vill växa online." />
+    <meta name="keywords" content="kundcase, Zolve UF, Ljungby, webbdesign, SEO, UX-design, projekt, Sverige" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Zolve UF" />
+    <title>Zolve UF - Kundcase och Projekt i Ljungby</title>
 
-  <!-- Preconnect for faster connection -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Zolve UF - Kundcase och Projekt i Ljungby" />
+    <meta property="og:description" content="Se våra kundcase med webbdesign, SEO och UX-design för företag som vill växa online." />
+    <meta property="og:image" content="images/om-oss-img.avif" />
+    <meta property="og:url" content="https://www.zolveuf.se/projekt.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sv_SE" />
 
-  <!-- Preload and non-blocking load for Google Fonts -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
-  <link rel="stylesheet" 
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" 
-        media="print" 
-        onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
-  </noscript>
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zolve UF - Kundcase och Projekt i Ljungby" />
+    <meta name="twitter:description" content="Se våra kundcase med webbdesign, SEO och UX-design för företag som vill växa online." />
+    <meta name="twitter:image" content="https://www.zolveuf.se/images/om-oss-img.avif" />
 
-  <!-- Preload and non-blocking load for Font Awesome -->
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-        media="print" 
-        onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </noscript>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.zolveuf.se/projekt.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
+    <!-- Preconnect for faster connection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload and non-blocking load for Google Fonts -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" />
+    <link rel="stylesheet" 
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" 
+          media="print" 
+          onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" />
+    </noscript>
+
+    <!-- Preload and non-blocking load for Font Awesome -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          media="print" 
+          onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </noscript>
 </head>
+
 <body>
-  <!-- Skip to content link for keyboard users -->
+    <!-- Skip to content link -->
 
-  <header role="banner">
-    <nav class="navbar" aria-label="Main Navigation">
-      <div class="navbar__logo"><a href="index.html">Zolve UF</a></div>
-      <ul class="navbar__links" id="navbar-links">
-        <li class="navbar__dropdown">
-          <a href="#"
-             class="dropdown__toggle"
-             aria-haspopup="true" 
-             aria-expanded="false" 
-             aria-controls="dropdown-menu-tjanster">
-            Tjänster
-            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-          </a>
-          <ul class="dropdown__menu" id="dropdown-menu-tjanster">
-            <li><a href="webbdesign.html">Webbdesign</a></li>
-            <li><a href="seo.html">SEO-optimering</a></li>
-            <li><a href="ux-design.html">UX-design</a></li>
-          </ul>
-        </li>
-        <li><a href="projekt.html">Kundcase</a></li>
-        <li><a href="om-oss.html">Om oss</a></li>
-      </ul>
-      <a href="contact.html" class="hero__cta">KONTAKTA</a>
-      <div class="navbar__toggle" role="button" tabindex="0"
-           aria-label="Toggle Navigation Menu" 
-           aria-expanded="false"
-           aria-controls="navbar-links">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
+    <header role="banner">
+        <nav class="navbar" aria-label="Huvudnavigering" role="navigation">
+            <div class="navbar__logo">
+                <a href="index.html">Zolve UF</a>
+            </div>
+            <ul class="navbar__links" id="navbar-links">
+                <li class="navbar__dropdown">
+                    <a href="#"
+                       class="dropdown__toggle"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-controls="dropdown-menu-tjanster">
+                        Tjänster
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown__menu" id="dropdown-menu-tjanster">
+                        <li><a href="webbdesign.html">Webbdesign</a></li>
+                        <li><a href="seo.html">SEO-optimering</a></li>
+                        <li><a href="ux-design.html">UX-design</a></li>
+                    </ul>
+                </li>
+                <li><a href="projekt.html">Kundcase</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+            </ul>
+            <a href="contact.html" class="hero__cta">KONTAKTA</a>
+            <div class="navbar__toggle" 
+                 role="button" 
+                 tabindex="0"
+                 aria-label="Växla navigeringsmeny"
+                 aria-expanded="false"
+                 aria-controls="navbar-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-  <!-- Wrap the primary content in a main landmark -->
-    <section class="hero hero-3" data-bg-url="../utforska-img-4.jpg" role="region" aria-label="Hero Section">
-      <div class="hero__content">
-        <h1 data-aos="fade-down" data-aos-duration="1000">Våra kunduppdrag</h1>
-        <p data-aos="fade-down" data-aos-duration="500">
-          Ett urval av hemsidor vi har skapat tillsammans med våra kunder. Vi har bred erfarenhet av både strategisk design och tekniskt avancerade lösningar som hjälper företag att växa online. 
-        </p>
-        <a data-aos="fade-in" data-aos-duration="1000" href="#main-content" class="btn projekt-arrow-hover feature__btn">
-          Se projekt <i class="fa-solid fa-arrow-down " aria-hidden="true"></i>
-        </a>
-      </div>
+    <!-- Hero Section -->
+    <section class="hero hero-3" 
+             data-bg-url="../utforska-img-4.jpg" 
+             role="region" 
+             aria-label="Huvudsektion" 
+             data-aos="fade-in">
+        <div class="hero__content">
+            <h1 data-aos="fade-down" data-aos-duration="1000">Våra kunduppdrag</h1>
+            <p data-aos="fade-down" data-aos-duration="500">
+                Ett urval av hemsidor vi har skapat tillsammans med våra kunder. Vi har bred erfarenhet av både strategisk design och tekniskt avancerade lösningar som hjälper företag att växa online.
+            </p>
+            <a data-aos="fade-in" data-aos-duration="1000" href="#main-content" class="btn projekt-arrow-hover feature__btn">
+                Se projekt <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+            </a>
+        </div>
     </section>
 
     <main class="main-content" id="main-content">
         <div class="container">
-          <section class="customer-cases">
-            <div class="customer-cases__grid" data-aos="fade-up" data-aos-duration="1000">
-              <!-- Kundcase 1 -->
-              <article class="customer-case">
-                <a href="kundcase-josco-travels.html" class="customer-case__link">
-                  <div class="customer-case__image-wrapper">
-                    <img src="images/kundcase-josco-img.jpg" alt="Kundcase 1" class="customer-case__image">
-                  </div>
-                  <div class="customer-case__content">
-                    <h2 class="customer-case__title">Josco Travels AB</h2>
-                    <p class="customer-case__description">Den lilla men personliga resebyrån som ordnar resor till världens alla hörn. </p>
-                  </div>
-                </a>
-              </article>
-    
-              <!-- Kundcase 2 -->
-              <article class="customer-case">
-                <a href="kundcase-aurora-stad.html" class="customer-case__link">
-                  <div class="customer-case__image-wrapper">
-                    <img src="images/kundcase-aurora-img.jpg" alt="Kundcase 2" class="customer-case__image">
-                  </div>
-                  <div class="customer-case__content">
-                    <h2 class="customer-case__title">Aurora Städ AB</h2>
-                    <p class="customer-case__description">"Vi vill inte bli störst, vi vill bli bäst" - Zorica Pranjic, VD                    </p>
-                  </div>
-                </a>
-              </article>
+            <section class="customer-cases" role="region" aria-label="Kundcase">
+                <div class="customer-cases__grid">
+                    <!-- Kundcase 1 -->
+                    <article class="customer-case"  data-aos="fade-up" data-aos-duration="1000">
+                        <a href="kundcase-josco-travels.html" class="customer-case__link">
+                            <div class="customer-case__image-wrapper">
+                                <img src="images/kundcase-josco-img.jpg" 
+                                     alt="Josco Travels AB webbplats, designad av Zolve UF" 
+                                     class="customer-case__image" 
+                                     loading="lazy" />
+                            </div>
+                            <div class="customer-case__content">
+                                <h2 class="customer-case__title">Josco Travels AB</h2>
+                                <p class="customer-case__description" lang="sv">Den lilla men personliga resebyrån som ordnar resor till världens alla hörn.</p>
+                            </div>
+                        </a>
+                    </article>
 
-              <!-- Kundcase 2 -->
-              <article class="customer-case">
-                  <a href="kundcase-your-next-automation.html" class="customer-case__link">
-                    <div class="customer-case__image-wrapper">
-                      <img src="images/kundcase-yna-img.jpg" alt="Kundcase 2" class="customer-case__image">
-                    </div>
-                    <div class="customer-case__content">
-                      <h2 class="customer-case__title">Your Next Automation AB</h2>
-                      <p class="customer-case__description">Slösa inte energi på tidskrävande rutinuppgifter.                      </p>
-                    </div>
-                  </a>
-                </article>
+                    <!-- Kundcase 2 -->
+                    <article class="customer-case"  data-aos="fade-up" data-aos-duration="1000">
+                        <a href="kundcase-aurora-stad.html" class="customer-case__link">
+                            <div class="customer-case__image-wrapper">
+                                <img src="images/kundcase-aurora-img.jpg" 
+                                     alt="Aurora Städ AB webbplats, SEO-optimerad av Zolve UF" 
+                                     class="customer-case__image" 
+                                     loading="lazy" />
+                            </div>
+                            <div class="customer-case__content">
+                                <h2 class="customer-case__title">Aurora Städ AB</h2>
+                                <p class="customer-case__description" lang="sv">"Vi vill inte bli störst, vi vill bli bäst" - Zorica Pranjic, VD</p>
+                            </div>
+                        </a>
+                    </article>
 
-                <article class="customer-case">
-                  <a href="kundcase-equalkidz.html" class="customer-case__link">
-                    <div class="customer-case__image-wrapper">
-                      <img src="images/kundcase-equalkidz-img.jpg" alt="Kundcase 2" class="customer-case__image">
-                    </div>
-                    <div class="customer-case__content">
-                      <h2 class="customer-case__title">EqualKidz UF</h2>
-                      <p class="customer-case__description">EqualKidz UF är djupt engagerade i att sprida budskapet om FN:s barnkonvention och de mänskliga rättigheterna.</p>
-                    </div>
-                  </a>
-                </article>
+                    <!-- Kundcase 3 -->
+                    <article class="customer-case"  data-aos="fade-up" data-aos-duration="1000">
+                        <a href="kundcase-your-next-automation.html" class="customer-case__link">
+                            <div class="customer-case__image-wrapper">
+                                <img src="images/kundcase-yna-img.jpg" 
+                                     alt="Your Next Automation AB webbplats, utvecklad av Zolve UF" 
+                                     class="customer-case__image" 
+                                     loading="lazy" />
+                            </div>
+                            <div class="customer-case__content">
+                                <h2 class="customer-case__title">Your Next Automation AB</h2>
+                                <p class="customer-case__description" lang="sv">Slösa inte energi på tidskrävande rutinuppgifter.</p>
+                            </div>
+                        </a>
+                    </article>
 
-                <article class="customer-case">
-                  <a href="kundcase-flexiworker.html" class="customer-case__link">
-                    <div class="customer-case__image-wrapper">
-                      <img src="images/kundcase-flexiworker-img.jpg" alt="Kundcase 2" class="customer-case__image">
-                    </div>
-                    <div class="customer-case__content">
-                      <h2 class="customer-case__title">FlexiWorker UF</h2>
-                      <p class="customer-case__description">Din väg till flexibla
-                        jobbmöjligheter!</p>
-                    </div>
-                  </a>
-                </article>
-    
-              <!-- Fler kundcase kan läggas till -->
+                    <!-- Kundcase 4 -->
+                    <article class="customer-case"  data-aos="fade-up" data-aos-duration="1000">
+                        <a href="kundcase-equalkidz.html" class="customer-case__link">
+                            <div class="customer-case__image-wrapper">
+                                <img src="images/kundcase-equalkidz-img.jpg" 
+                                     alt="EqualKidz UF webbplats, designad av Zolve UF" 
+                                     class="customer-case__image" 
+                                     loading="lazy" />
+                            </div>
+                            <div class="customer-case__content">
+                                <h2 class="customer-case__title">EqualKidz UF</h2>
+                                <p class="customer-case__description" lang="sv">EqualKidz UF är djupt engagerade i att sprida budskapet om FN:s barnkonvention och de mänskliga rättigheterna.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Kundcase 5 -->
+                    <article class="customer-case"  data-aos="fade-up" data-aos-duration="1000">
+                        <a href="kundcase-flexiworker.html" class="customer-case__link">
+                            <div class="customer-case__image-wrapper">
+                                <img src="images/kundcase-flexiworker-img.jpg" 
+                                     alt="FlexiWorker UF webbplats, utvecklad av Zolve UF" 
+                                     class="customer-case__image" 
+                                     loading="lazy" />
+                            </div>
+                            <div class="customer-case__content">
+                                <h2 class="customer-case__title">FlexiWorker UF</h2>
+                                <p class="customer-case__description" lang="sv">Din väg till flexibla jobbmöjligheter!</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="container" role="contentinfo">
+        <div class="footer-line"></div>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>ZOLVE UF</h3>
+                <p>341 40, Ljungby</p>
+                <p><a href="mailto:zolveuf@gmail.com">zolveuf@gmail.com</a></p>
             </div>
-          </section>
+            <div class="footer-column">
+                <h3>TJÄNSTER</h3>
+                <a href="webbdesign.html">Webbdesign</a><br />
+                <a href="seo.html">SEO</a><br />
+                <a href="ux-design.html">UX-design</a>
+            </div>
+            <div class="footer-column">
+                <h3>INFORMATION</h3>
+                <a href="contact.html">Kontakta oss</a><br />
+                <a href="villkor.html">Allmänna villkor</a><br />
+            </div>
+            <div class="footer-column">
+                <h3>SOCIALA MEDIER</h3>
+                <a href="https://www.instagram.com/zolveuf/">Instagram</a><br />
+            </div>
         </div>
-      </main>
-      <footer class="container">
-
- 
-          <div class="footer-line"></div>
-          <div class="footer-content">
-              <div class="footer-column">
-                  <h3>ZOLVE UF</h3>
-                  <p>341 40, Ljungby</p>
-                  <p><a href="mailto:zolveuf@gmail.co">zolveuf@gmail.com</a></p>
-              </div>
-              <div class="footer-column">
-                  <h3>TJÄNSTER</h3>
-                  <a href="webbdesign.html">Webbdesign</a><br>
-                  <a href="seo.html">SEO</a><br>
-                  <a href="ux-design.html">UX-design</a>
-              </div>
-              <div class="footer-column">
-                  <h3>INFORMATION</h3>
-                  <a href="contact.html">Kontakta oss</a><br>
-                  <a href="villkor.html">Allmänna villkor</a><br>
-              </div>
-              <div class="footer-column">
-                  <h3>SOCIALA MEDIER</h3>
-                  <a href="https://www.instagram.com/zolveuf/">Instagram</a><br>
-              </div>
-          </div>
-      </footer>
-      <!-- Bottenrad -->
-      <!-- Bottenrad -->
-      <div class="footer__bottom">
-        <div class="container">
-            <p>&copy; 2025 Zolve UF. Made by Zolve UF</p>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>© 2025 Zolve UF. Made by Zolve UF</p>
+            </div>
         </div>
-      </div>
 
-  <!-- Combined JavaScript for interactivity and accessibility -->
-  <script src="script.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+        <!-- Schema Markup for Portfolio Page -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Zolve UF - Kundcase och Projekt",
+            "description": "Ett urval av kundcase där Zolve UF har skapat hemsidor med webbdesign, SEO och UX-design för företag i Ljungby och Sverige.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zolve UF",
+                "url": "https://www.zolveuf.se",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "341 40",
+                    "addressLocality": "Ljungby",
+                    "addressCountry": "SE"
+                },
+                "email": "zolveuf@gmail.com"
+            }
+        }
+        </script>
+    </footer>
 
+    <!-- Combined JavaScript for interactivity and accessibility -->
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

@@ -1,200 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zolve UF</title>
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Kontakta Zolve UF i Ljungby för professionella hemsidor med webbdesign, SEO och UX-design." />
+    <meta name="keywords" content="kontakta oss, Zolve UF, Ljungby, webbdesign, SEO, UX-design, kontaktformulär, Sverige" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Zolve UF" />
+    <title>Zolve UF - Kontakta Oss i Ljungby</title>
 
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Zolve UF - Kontakta Oss i Ljungby" />
+    <meta property="og:description" content="Hör av dig till Zolve UF för hjälp med webbdesign, SEO och UX-design." />
+    <meta property="og:image" content="images/om-oss-img.avif" />
+    <meta property="og:url" content="https://www.zolveuf.se/contact.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sv_SE" />
 
-  <!-- Preconnect for faster connection -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zolve UF - Kontakta Oss i Ljungby" />
+    <meta name="twitter:description" content="Hör av dig till Zolve UF för hjälp med webbdesign, SEO och UX-design." />
+    <meta name="twitter:image" content="https://www.zolveuf.se/images/om-oss-img.avif" />
 
-  <!-- Preload and non-blocking load for Google Fonts -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
-  <link rel="stylesheet" 
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" 
-        media="print" 
-        onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap">
-  </noscript>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.zolveuf.se/contact.html" />
 
-  <!-- Preload and non-blocking load for Font Awesome -->
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-        media="print" 
-        onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </noscript>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
+    <!-- Preconnect for faster connection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload and non-blocking load for Google Fonts -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" />
+    <link rel="stylesheet" 
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" 
+          media="print" 
+          onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" />
+    </noscript>
+
+    <!-- Preload and non-blocking load for Font Awesome -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          media="print" 
+          onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </noscript>
 </head>
+
 <body>
-  <!-- Skip to content link for keyboard users -->
+    <!-- Skip to content link -->
 
-  <header role="banner">
-    <nav class="navbar" aria-label="Main Navigation">
-      <div class="navbar__logo"><a href="index.html">Zolve UF</a></div>
-      <ul class="navbar__links" id="navbar-links">
-        <li class="navbar__dropdown">
-          <a href="#"
-             class="dropdown__toggle"
-             aria-haspopup="true" 
-             aria-expanded="false" 
-             aria-controls="dropdown-menu-tjanster">
-            Tjänster
-            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-          </a>
-          <ul class="dropdown__menu" id="dropdown-menu-tjanster">
-            <li><a href="webbdesign.html">Webbdesign</a></li>
-            <li><a href="seo.html">SEO-optimering</a></li>
-            <li><a href="ux-design.html">UX-design</a></li>
-          </ul>
-        </li>
-        <li><a href="projekt.html">Kundcase</a></li>
-        <li><a href="om-oss.html">Om oss</a></li>
-      </ul>
-      <a href="contact.html" class="hero__cta">KONTAKTA</a>
-      <div class="navbar__toggle" role="button" tabindex="0"
-           aria-label="Toggle Navigation Menu" 
-           aria-expanded="false"
-           aria-controls="navbar-links">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
-
-<!-- Hero Section -->
-<section class="hero lazy-bg" data-bg-url="../utforska-img-4.jpg" role="region" aria-label="Hero Section">
-  <div class="hero__2__content">
-    <h1 data-aos="fade-down" data-aos-duration="1000">KONTAKTA OSS</h1>
-  </div>
-</section>
-
-<!-- Asymmetrical Contact Section -->
-<main id="main-content"  style="background-color: #ffffff;">
-      <!-- VD Kontakt - Två Boxar -->
-      <section class="executive-contact">
-        <div class="container">
-          <!-- Box med VD:s bild -->
-
-          <!-- Box med VD:s kontaktuppgifter -->
-          <div class="executive-box" data-aos="fade-right" data-aos-duration="1000">
-            <h3>Martin Pranjic</h3>
-            <div class="image-box">
-              <img src="images/martin.webp" alt="Bild på VD">
+    <header role="banner">
+        <nav class="navbar" aria-label="Huvudnavigering" role="navigation">
+            <div class="navbar__logo">
+                <a href="index.html">Zolve UF</a>
             </div>
-            <p><strong>VD</strong> och <strong>webbutvecklare</strong></p>
-            <a href="contact.html" class="btn feature__btn">
-              070-123 4567 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-            </a>
-            <br>
-            <a href="contact.html" class="btn feature__btn">
-              zolveuf@gmail.com <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="executive-box" data-aos="fade-up" data-aos-duration="1000">
-            <h3>Oscar Johansson</h3>
-            <div class="image-box">
-              <img src="images/oscar.webp" alt="Bild på VD">
+            <ul class="navbar__links" id="navbar-links">
+                <li class="navbar__dropdown">
+                    <a href="#"
+                       class="dropdown__toggle"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-controls="dropdown-menu-tjanster">
+                        Tjänster
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown__menu" id="dropdown-menu-tjanster">
+                        <li><a href="webbdesign.html">Webbdesign</a></li>
+                        <li><a href="seo.html">SEO-optimering</a></li>
+                        <li><a href="ux-design.html">UX-design</a></li>
+                    </ul>
+                </li>
+                <li><a href="projekt.html">Kundcase</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+            </ul>
+            <a href="contact.html" class="hero__cta">KONTAKTA</a>
+            <div class="navbar__toggle" 
+                 role="button" 
+                 tabindex="0"
+                 aria-label="Växla navigeringsmeny"
+                 aria-expanded="false"
+                 aria-controls="navbar-links">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <p><strong>Ekonomiansvarig</strong> och <strong>webbutvecklare</strong></p>
-            <a href="contact.html" class="btn feature__btn">
-              070-123 4567 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-            </a>
-            <br>
-            <a href="contact.html" class="btn feature__btn">
-              zolveuf@gmail.com <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-            </a>
-          </div>
+        </nav>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero kontakta-oss-hero-img" 
+             data-bg-url="../utforska-img-4.jpg" 
+             role="region" 
+             aria-label="Huvudsektion" 
+             data-aos="fade-in">
+        <div class="hero__2__content">
+            <h1 data-aos="fade-down" data-aos-duration="1000">Kontakta Oss</h1>
         </div>
-      </section>
-  <!-- Kontaktinformation & formulär -->
-  <section class="contact-info" data-aos="fade-up" data-aos-duration="1000">
-    <div class="container">
-      <!-- Kontaktuppgifter -->
-      <div class="contact-details">
-        <h2>Våra uppgifter</h2>
-        <p><strong>Adress:</strong> 341 40, Ljungby</p>
-        <p><strong>Telefon:</strong> 012-345 6789</p>
-        <p><strong>E-post:</strong> zolveuf@gmail.com</p>
-      </div>
+    </section>
 
+    <main id="main-content" style="background-color: #ffffff;">
+        <!-- Executive Contact Section -->
+        <section class="executive-contact" role="region" aria-label="Kontakta vårt team">
+            <div class="container">
+                <div class="executive-box" data-aos="fade-right" data-aos-duration="1000">
+                    <h2>Martin Pranjic</h2>
+                    <div class="image-box">
+                        <img src="images/martin.webp" 
+                             alt="Martin Pranjic, VD och webbutvecklare på Zolve UF" 
+                             loading="lazy" />
+                    </div>
+                    <p lang="sv"><strong>VD</strong> och <strong>webbutvecklare</strong></p>
+                    <a href="tel:0735411018" class="btn feature__btn">
+                        073-541 1018 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <br />
+                    <a href="mailto:zolveuf@gmail.com" class="btn feature__btn">
+                        zolveuf@gmail.com <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="executive-box" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>Oscar Johansson</h2>
+                    <div class="image-box">
+                        <img src="images/oscar.webp" 
+                             alt="Oscar Johansson, ekonomiansvarig och webbutvecklare på Zolve UF" 
+                             loading="lazy" />
+                    </div>
+                    <p lang="sv"><strong>Ekonomiansvarig</strong> och <strong>webbutvecklare</strong></p>
+                    <a href="tel:0768084264" class="btn feature__btn">
+                        076-808 4264 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <br />
+                    <a href="mailto:zolveuf@gmail.com" class="btn feature__btn">
+                        zolveuf@gmail.com <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-      <!-- Kontaktformulär -->
-      <div class="contact-form">
-        <h2>Hör av dig!</h2>
-        <p style="margin-bottom: 2rem;">Fyll i formuläret så hör vi av oss så fort vi kan.</p>
-        <form action="mailto:info@zolveuf.se" method="post" enctype="text/plain">
-          <div class="form-group">
-            <label for="name">Namn</label>
-            <input type="text" id="name" name="name" placeholder="Ditt namn" required>
-          </div>
-          <div class="form-group">
-            <label for="email">E-post</label>
-            <input type="email" id="email" name="email" placeholder="Din e-postadress" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Meddelande</label>
-            <textarea id="message" name="message" rows="6" placeholder="Ditt meddelande" required></textarea>
-          </div>
-          <button type="submit" class="btn">Skicka<i class="fa-solid fa-paper-plane"></i></button>
-        </form>
-      </div>
-    </div>
-  </section>
+        <!-- Contact Info & Form Section -->
+        <section class="contact-info" data-aos="fade-up" data-aos-duration="1000" role="region" aria-label="Kontaktuppgifter och formulär">
+            <div class="container">
+                <!-- Kontaktuppgifter -->
+                <div class="contact-details">
+                    <h2>Våra uppgifter</h2>
+                    <p lang="sv"><strong>Adress:</strong> 341 40, Ljungby</p>
+                    <p lang="sv"><strong>Telefon:</strong> <a href="tel:0768084264">076-808 4264</a></p>
+                    <p lang="sv"><strong>E-post:</strong> <a href="mailto:zolveuf@gmail.com">zolveuf@gmail.com</a></p>
+                </div>
 
+                <!-- Kontaktformulär -->
+                <div class="contact-form">
+                    <h2>Hör av dig!</h2>
+                    <p style="margin-bottom: 2rem;" lang="sv">Fyll i formuläret så hör vi av oss så fort vi kan.</p>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="be37b79d-ff9b-4f95-b048-82b7e9c9ae1e" />
+                        <div class="form-group">
+                            <label for="name">Namn</label>
+                            <input type="text" id="name" name="name" placeholder="Ditt namn" required aria-required="true" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-post</label>
+                            <input type="email" id="email" name="email" placeholder="Din e-postadress" required aria-required="true" />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Meddelande</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Ditt meddelande" required aria-required="true"></textarea>
+                        </div>
+                        <input type="hidden" name="redirect" value="https://www.zolveuf.se/tack.html" />
+                        <button type="submit" class="btn">Skicka <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
-</main>
-
-<footer class="container">
-
-
-
-
-    <div class="footer-line"></div>
-    <div class="footer-content">
-        <div class="footer-column">
-            <h3>ZOLVE UF</h3>
-            <p>341 40, Ljungby</p>
-            <p><a href="mailto:zolveuf@gmail.co">zolveuf@gmail.com</a></p>
+    <footer class="container" role="contentinfo">
+        <div class="footer-line"></div>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>ZOLVE UF</h3>
+                <p>341 40, Ljungby</p>
+                <p><a href="mailto:zolveuf@gmail.com">zolveuf@gmail.com</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>TJÄNSTER</h3>
+                <a href="webbdesign.html">Webbdesign</a><br />
+                <a href="seo.html">SEO</a><br />
+                <a href="ux-design.html">UX-design</a>
+            </div>
+            <div class="footer-column">
+                <h3>INFORMATION</h3>
+                <a href="contact.html">Kontakta oss</a><br />
+                <a href="villkor.html">Allmänna villkor</a><br />
+            </div>
+            <div class="footer-column">
+                <h3>SOCIALA MEDIER</h3>
+                <a href="https://www.instagram.com/zolveuf/">Instagram</a><br />
+            </div>
         </div>
-        <div class="footer-column">
-            <h3>TJÄNSTER</h3>
-            <a href="webbdesign.html">Webbdesign</a><br>
-            <a href="seo.html">SEO</a><br>
-            <a href="ux-design.html">UX-design</a>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>© 2025 Zolve UF. Made by Zolve UF</p>
+            </div>
         </div>
-        <div class="footer-column">
-            <h3>INFORMATION</h3>
-            <a href="contact.html">Kontakta oss</a><br>
-            <a href="villkor.html">Allmänna villkor</a><br>
-        </div>
-        <div class="footer-column">
-            <h3>SOCIALA MEDIER</h3>
-            <a href="https://www.instagram.com/zolveuf/">Instagram</a><br>
-        </div>
-    </div>
-</footer>
-<!-- Bottenrad -->
-<!-- Bottenrad -->
-<div class="footer__bottom">
-  <div class="container">
-      <p>&copy; 2025 Zolve UF. Made by Zolve UF</p>
-  </div>
-</div>
-  <!-- Combined JavaScript for interactivity and accessibility -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js" defer></script>
 
+        <!-- Schema Markup for Contact Page -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Zolve UF - Kontakta Oss",
+            "description": "Kontakta Zolve UF i Ljungby för professionella hemsidor med webbdesign, SEO och UX-design.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zolve UF",
+                "url": "https://www.zolveuf.se",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "341 40",
+                    "addressLocality": "Ljungby",
+                    "addressCountry": "SE"
+                },
+                "email": "zolveuf@gmail.com",
+                "telephone": "+46123456789"
+            }
+        }
+        </script>
+    </footer>
+
+    <!-- Combined JavaScript for interactivity and accessibility -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

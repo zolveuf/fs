@@ -27,7 +27,7 @@
     <link rel="canonical" href="https://www.zolveuf.se/" />
 
     <!-- Favicon and Icons -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
 
     <!-- Link to external CSS files -->
@@ -178,7 +178,7 @@
                         </div>
                     </div>
                     <div class="gallery__item gallery__item--tall">
-                        <img src="kontakta-oss-img.jpg"
+                        <img src="images/aurora-stad.jpg"
                              alt="Aurora Städ webbplats, städtjänst i fokus"
                              class="gallery__img" 
                              loading="lazy" />
@@ -281,7 +281,8 @@
                 <h1>Hör av dig,<br>så sätter vi igång!</h1>
                 <div class="contact-form">
                     <p style="margin-bottom: 2rem;">Fyll i formuläret så hör vi av oss så fort vi kan.</p>
-                    <form action="mailto:info@zolveuf.se" method="post" enctype="text/plain">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="be37b79d-ff9b-4f95-b048-82b7e9c9ae1e" />
                         <div class="form-group">
                             <label for="name">Namn</label>
                             <input type="text" id="name" name="name" required aria-required="true" />
@@ -294,6 +295,7 @@
                             <label for="message">Meddelande</label>
                             <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
                         </div>
+                        <input type="hidden" name="redirect" value="https://www.zolveuf.se/tack.html" />
                         <button type="submit" style="max-width: 200px;" class="btn">
                             Skicka <i class="fa-solid fa-paper-plane"></i>
                         </button>
