@@ -1,6 +1,7 @@
 
 AOS.init({
   duration: 1200, // Animationens varaktighet i ms
+  once: true, // Animationen körs bara en gång
 });
 
 
