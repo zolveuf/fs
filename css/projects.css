@@ -75,4 +75,12 @@
   .hero-3 {
     background: rgb(2,0,36);
     }
+
+    .website-hover {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .website-hover:hover {
+      scale: 1.02;
+    }
   

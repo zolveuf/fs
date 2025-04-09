@@ -961,4 +961,78 @@ footer {
   }
 }
 
+.hero-6 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  padding: calc(6rem + 4rem) 2rem 6rem;
+  position: relative;
+}
+
+.hero-content-6 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-6 h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.hero-6 p {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  margin-bottom: 4rem;
+  color: #666;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.cta-button-6 {
+  display: inline-block;
+
+
+  padding: 0.5rem 1.25rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight-bold);
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button-6:hover {
+  background: #003d80;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero-6 {
+      padding: calc(4rem + 4rem) 1rem 4rem;
+  }
+  
+  .hero-content-6 {
+      padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-6 {
+      padding: calc(3rem + 4rem) 1rem 3rem;
+  }
+  
+  .cta-button-6 {
+      width: 100%;
+      text-align: center;
+  }
+}
+
 
